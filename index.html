@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hemanth Reddy | AI & Data Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">HEMANTH <span class="highlight">R.</span></div>
+            <ul class="nav-links">
+                <li><a href="#about">whoami</a></li>
+                <li><a href="#expertise">expertise</a></li>
+                <li><a href="#experience">experience</a></li>
+                <li><a href="#research">research</a></li>
+                <li><a href="#education">education</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero" id="about">
+        <div class="hero-content reveal">
+            <p class="terminal-text">root@amrita:~$ systemctl status hemanth --live</p>
+            <h1 class="glitch" data-text="Hemanth Reddy">Hemanth Reddy</h1>
+            <h2 class="subtitle">AI & Data Engineer who builds end-to-end.</h2>
+            <p class="description">
+                I am a B.Tech student in AI & Data Science at Amrita Vishwa Vidyapeetham. My work bridges the gap between theoretical machine learning and production-ready systems. I focus on big data pipelines, distributed ML ensembles, and high-performance computing.
+            </p>
+            <div class="status-box">
+                <p><strong>Currently:</strong> Architecting an adaptive GPU-accelerated graph processing engine.</p>
+                <p><strong>Focus:</strong> Machine Learning, Big Data Infrastructure, High-Performance Computing.</p>
+                <p><strong>Exploring:</strong> Rust for systems programming & advanced GNNs.</p>
+            </div>
+            <div class="hero-buttons">
+                <a href="#research" class="btn primary">View Projects</a>
+                <a href="mailto:your.email@example.com" class="btn secondary">Contact Me</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="expertise" id="expertise">
+        <h2 class="section-title reveal">Technical Expertise</h2>
+        <div class="expertise-grid reveal">
+            <div class="expertise-card">
+                <h3>Languages</h3>
+                <p>Python, Java, C++, JavaScript, Scala</p>
+            </div>
+            <div class="expertise-card">
+                <h3>Machine Learning</h3>
+                <p>Scikit-learn, TensorFlow, XGBoost, LightGBM, Pandas, SHAP</p>
+            </div>
+            <div class="expertise-card">
+                <h3>Big Data & Compute</h3>
+                <p>Hadoop HDFS, Apache Spark, Kafka, CUDA, OpenMP, MPI</p>
+            </div>
+            <div class="expertise-card">
+                <h3>Infrastructure</h3>
+                <p>FastAPI, Docker, Git, Streamlit, Qiskit</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="experience" id="experience">
+        <h2 class="section-title reveal">Experience</h2>
+        <div class="experience-card reveal">
+            <div class="exp-header">
+                <h3>AI & Data Science Intern</h3>
+                <span class="company">XYlofy AI</span>
+            </div>
+            <ul class="exp-details">
+                <li>Built an end-to-end real-time fraud detection system to identify suspicious financial transactions using explainable AI.</li>
+                <li>Processed 590K+ transactions with 400+ features, handling significant missing data and severe class imbalance using SMOTE.</li>
+                <li>Optimized classification thresholds across LightGBM, XGBoost, and Isolation Forest models.</li>
+                <li>Applied SHAP for model interpretability and deployed an interactive Streamlit dashboard for real-time fraud risk analysis.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="research" id="research">
+        <h2 class="section-title reveal">Projects & Research</h2>
+        <p class="section-subtitle reveal">Building scalable systems that solve complex technical challenges.</p>
+        
+        <div class="projects-grid">
+            <div class="project-card reveal">
+                <div class="project-content">
+                    <h3>AI Cyberattack Detection (SDN-OSHLD)</h3>
+                    <p>Real-time network intrusion detection achieving 99.2% accuracy on the CICIDS2017 benchmark. Built complex feature engineering pipelines and served inference via a sub-100ms FastAPI backend.</p>
+                    <div class="tech-stack">
+                        <span>Python</span><span>Scikit-learn</span><span>FastAPI</span><span>Docker</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card reveal">
+                <div class="project-content">
+                    <h3>Big Data Taxi Demand & ETA</h3>
+                    <p>Distributed pipeline processing 17GB+ (11M+ records) of geospatial data. Integrated Kafka streaming and external weather APIs for real-time hourly demand and fare prediction.</p>
+                    <div class="tech-stack">
+                        <span>Hadoop</span><span>Apache Spark</span><span>Scala</span><span>Kafka</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card reveal">
+                <div class="project-content">
+                    <h3>Adaptive GPU Graph Engine</h3>
+                    <p>High-performance graph processing (BFS, PageRank) that dynamically schedules execution across CPU and GPU hardware based on graph topology to eliminate memory bottlenecks.</p>
+                    <div class="tech-stack">
+                        <span>C++</span><span>CUDA</span><span>OpenMP</span><span>MPI</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card reveal">
+                <div class="project-content">
+                    <h3>AQTrust: Quantum Verification</h3>
+                    <p>Quantum-cloud verification framework using hidden trap circuits to ensure computation integrity. Simulated 20,000 sessions per policy and optimized execution profiling.</p>
+                    <div class="tech-stack">
+                        <span>Python</span><span>Qiskit</span><span>Qiskit Aer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="education" id="education">
+        <h2 class="section-title reveal">Education</h2>
+        <div class="education-card reveal">
+            <h3>Amrita Vishwa Vidyapeetham</h3>
+            <p class="degree">B.Tech in Artificial Intelligence & Data Science (2024 — 2028)</p>
+            <p class="coursework"><strong>Relevant Coursework:</strong> Data Structures & Algorithms, Database Management Systems, Operating Systems, Computer Networks, Machine Learning, Deep Learning.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://github.com/Hemanthf224" target="_blank">GitHub</a>
+                <a href="#" target="_blank">LinkedIn</a>
+            </div>
+            <p>&copy; 2026 Hemanth Reddy. Built with precision.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
