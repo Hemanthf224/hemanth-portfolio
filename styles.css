@@ -89,12 +89,40 @@ body {
     margin-bottom: 1rem;
 }
 
-.glitch {
+.typewriter {
     font-size: 4rem;
     font-weight: 800;
     color: white;
     margin-bottom: 0.5rem;
-    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px solid var(--accent-cyan);
+    width: 0;
+    animation: typing 1.5s steps(30, end) forwards, blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink {
+    from, to { border-color: transparent }
+    50% { border-color: var(--accent-cyan) }
+}
+
+.fade-up {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUpAnim 1s ease forwards;
+    animation-delay: 1.5s;
+}
+
+@keyframes fadeUpAnim {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .subtitle {
@@ -405,11 +433,51 @@ footer p {
         display: none;
     }
     
-    .glitch {
+    .typewriter {
         font-size: 2.5rem;
     }
     
     .projects-grid {
         grid-template-columns: 1fr;
     }
+    
+    /* Disable custom cursor on mobile */
+    .cursor-dot, .cursor-outline {
+        display: none;
+    }
+}
+
+/* Custom Cursor */
+.cursor-dot {
+    width: 8px;
+    height: 8px;
+    background-color: var(--accent-cyan);
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    z-index: 9999;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+}
+
+.cursor-outline {
+    width: 40px;
+    height: 40px;
+    border: 2px solid var(--accent-magenta);
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    z-index: 9998;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: width 0.2s, height 0.2s, background-color 0.2s;
+}
+
+.cursor-hover {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(255, 0, 127, 0.1);
+    border-color: transparent;
 }
