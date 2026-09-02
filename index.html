@@ -5,22 +5,25 @@
 
 <style>
 /* ══ TWO INKS ONLY: paper and ink ═══════════════════════════════════════ */
-:root{
+:root, :root[data-theme="ego"] {
   /* ══ EGO MODE (Light Theme) ══ */
   --paper:#FFFFFF; --paper-2:#F5F5F5; --ink:#0B0B0C; --ink-soft:#3A3A3D; --ink-faint:#7C7C81;
   --rule:#E63946; --tone:#E63946; --tone-op:.15; --shadow:6px 6px 0 var(--rule);
   --vid-op:.24; --vid-blend:multiply; --dot-blend:multiply;
 }
-@media (prefers-color-scheme: dark){
-  :root:not([data-mode="paper"]){
-    --paper:#040914; --paper-2:#081326; --ink:#E6F1FF; --ink-soft:#8892B0; --ink-faint:#495670;
-    --rule:#00E5FF; --tone:#00E5FF; --tone-op:.25; --shadow:6px 6px 0 var(--rule);
-    --vid-op:.20; --vid-blend:screen; --dot-blend:screen;
-  }
-}
-:root[data-mode="ink"]{
+:root[data-theme="ink"] {
   --paper:#040914; --paper-2:#081326; --ink:#E6F1FF; --ink-soft:#8892B0; --ink-faint:#495670;
   --rule:#00E5FF; --tone:#00E5FF; --tone-op:.25; --shadow:6px 6px 0 var(--rule);
+  --vid-op:.20; --vid-blend:screen; --dot-blend:screen;
+}
+:root[data-theme="matrix"] {
+  --paper:#0D0D0D; --paper-2:#1A1A1A; --ink:#00FF41; --ink-soft:#008F11; --ink-faint:#003B00;
+  --rule:#00FF41; --tone:#00FF41; --tone-op:.15; --shadow:6px 6px 0 var(--rule);
+  --vid-op:.15; --vid-blend:screen; --dot-blend:screen;
+}
+:root[data-theme="gold"] {
+  --paper:#0A0A0A; --paper-2:#141414; --ink:#F9D342; --ink-soft:#B8860B; --ink-faint:#6B4E00;
+  --rule:#F9D342; --tone:#F9D342; --tone-op:.15; --shadow:6px 6px 0 var(--rule);
   --vid-op:.20; --vid-blend:screen; --dot-blend:screen;
 }
 
@@ -592,23 +595,25 @@ function Formation({ running }) {
 }
 
 /* ── app ─────────────────────────────────────────────────────────────── */
+const THEMES = ["ego", "ink", "matrix", "gold"];
+
 function App() {
-  const [mode, setMode] = useState(null);           // null = follow the system
+  const [themeIndex, setThemeIndex] = useState(0);
   const [running, setRunning] = useState(true);
   const [active, setActive] = useState("card");
 
   useEffect(() => {
     try {
-      const m = localStorage.getItem("mhr-mode"); if (m) setMode(m);
+      const m = localStorage.getItem("mhr-theme"); 
+      if (m && THEMES.includes(m)) setThemeIndex(THEMES.indexOf(m));
       const mo = localStorage.getItem("mhr-motion"); if (mo === "0") setRunning(false);
     } catch (e) {}
   }, []);
   useEffect(() => {
-    if (mode) document.documentElement.setAttribute("data-mode", mode);
-    else document.documentElement.removeAttribute("data-mode");
-    try { if (mode) localStorage.setItem("mhr-mode", mode); } catch (e) {}
-  }, [mode]);
-  useEffect(() => { try { localStorage.setItem("mhr-motion", running ? "1" : "0"); } catch (e) {} }, [running]);
+    const theme = THEMES[themeIndex];
+    document.documentElement.setAttribute("data-theme", theme);
+    try { localStorage.setItem("mhr-theme", theme); } catch (e) {}
+  }, [themeIndex]);
 
   const [timeStr, setTimeStr] = useState("");
   useEffect(() => {
@@ -639,7 +644,7 @@ function App() {
     return () => obs.disconnect();
   }, []);
 
-  const isInk = mode === "ink";
+  const themeName = THEMES[themeIndex];
 
   return (
     <MotionConfig reducedMotion={running ? "user" : "always"}>
@@ -664,9 +669,9 @@ function App() {
           </nav>
           <div className="controls">
             <div className="stat-online"><div className="stat-dot"></div>{timeStr || "ONLINE"}</div>
-            <a href="#" className="tgl" style={{textDecoration:'none', marginRight: '6px'}}>RESUME ⬇</a>
-            <motion.button className="tgl" aria-pressed={isInk} whileTap={{ scale: .94 }}
-              onClick={() => setMode(isInk ? "paper" : "ink")}>{isInk ? "Paper" : "Ink"}</motion.button>
+            <a href="https://linkedin.com/in/hemanthreddy" className="tgl" style={{textDecoration:'none', marginRight: '6px'}}>RESUME ⬇</a>
+            <motion.button className="tgl" whileTap={{ scale: .94 }}
+              onClick={() => setThemeIndex(i => (i + 1) % THEMES.length)}>{themeName.toUpperCase()}</motion.button>
             <motion.button className="tgl" aria-pressed={running} whileTap={{ scale: .94 }}
               onClick={() => setRunning(r => !r)}>{running ? "Motion" : "Still"}</motion.button>
           </div>
@@ -814,9 +819,9 @@ function App() {
                     <h3 style={{fontSize: 'clamp(32px, 4vw, 48px)', marginTop: '16px', lineHeight: 1}}>{g.title}</h3>
                     <p style={{fontSize: '18px', marginTop: '16px', color: 'var(--ink)'}}>{g.lead}</p>
                     <div style={{display: 'flex', gap: '10px', marginTop: '20px', flexWrap: 'wrap'}}>
-                      <a href="#" className="btn">CASE STUDY →</a>
-                      <a href="#" className="btn hollow">GitHub</a>
-                      <a href="#" className="btn hollow">Live Demo</a>
+                      <a href="https://github.com/Hemanthf224" className="btn">CASE STUDY →</a>
+                      <a href="https://github.com/Hemanthf224" className="btn hollow">GitHub</a>
+                      <a href="https://github.com/Hemanthf224" className="btn hollow">Live Demo</a>
                     </div>
                   </div>
                   <div className="headline-stat" style={{borderLeft: '4px solid var(--ink)', paddingLeft: '30px', minWidth: '220px', borderTop: 'none', margin: 0}}>
