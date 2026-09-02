@@ -6,20 +6,20 @@
 <style>
 /* ══ TWO INKS ONLY: paper and ink ═══════════════════════════════════════ */
 :root{
-  --paper:#F6F4EF; --paper-2:#ECE9E1; --ink:#0B0B0C; --ink-soft:#3A3A3D; --ink-faint:#7C7C81;
-  --rule:#0B0B0C; --tone:#0B0B0C; --tone-op:.30; --shadow:6px 6px 0 var(--ink);
+  --paper:#F0F4F8; --paper-2:#E1E8F0; --ink:#0A192F; --ink-soft:#172A45; --ink-faint:#8892B0;
+  --rule:#007BFF; --tone:#007BFF; --tone-op:.20; --shadow:6px 6px 0 var(--rule);
   --vid-op:.24; --vid-blend:multiply; --dot-blend:multiply;
 }
 @media (prefers-color-scheme: dark){
   :root:not([data-mode="paper"]){
-    --paper:#0A0A0B; --paper-2:#151517; --ink:#F6F4EF; --ink-soft:#C4C2BC; --ink-faint:#7E7D79;
-    --rule:#F6F4EF; --tone:#F6F4EF; --tone-op:.26;
+    --paper:#040914; --paper-2:#081326; --ink:#E6F1FF; --ink-soft:#8892B0; --ink-faint:#495670;
+    --rule:#00E5FF; --tone:#00E5FF; --tone-op:.25; --shadow:6px 6px 0 var(--rule);
     --vid-op:.20; --vid-blend:screen; --dot-blend:screen;
   }
 }
 :root[data-mode="ink"]{
-  --paper:#0A0A0B; --paper-2:#151517; --ink:#F6F4EF; --ink-soft:#C4C2BC; --ink-faint:#7E7D79;
-  --rule:#F6F4EF; --tone:#F6F4EF; --tone-op:.26;
+  --paper:#040914; --paper-2:#081326; --ink:#E6F1FF; --ink-soft:#8892B0; --ink-faint:#495670;
+  --rule:#00E5FF; --tone:#00E5FF; --tone-op:.25; --shadow:6px 6px 0 var(--rule);
   --vid-op:.20; --vid-blend:screen; --dot-blend:screen;
 }
 
