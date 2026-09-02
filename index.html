@@ -6,7 +6,7 @@
 <style>
 /* ══ TWO INKS ONLY: paper and ink ═══════════════════════════════════════ */
 :root{
-  --paper:#F0F4F8; --paper-2:#E1E8F0; --ink:#0A192F; --ink-soft:#172A45; --ink-faint:#8892B0;
+  --paper:#FFFFFF; --paper-2:#F4F6F8; --ink:#0A192F; --ink-soft:#172A45; --ink-faint:#6B7C93;
   --rule:#007BFF; --tone:#007BFF; --tone-op:.20; --shadow:6px 6px 0 var(--rule);
   --vid-op:.24; --vid-blend:multiply; --dot-blend:multiply;
 }
@@ -742,7 +742,9 @@ function App() {
         <Rail id="card" index="01 · Profile" title="The Player Card" jp="プレイヤーカード">
           <div className="card-grid">
             <motion.div className="pcard" variants={riseIn} {...inViewProps}
-              whileHover={{ rotateY: 4, rotateX: -3 }} style={{ perspective: 900 }}>
+              whileHover={{ scale: 1.03, rotateY: 8, rotateX: -6, boxShadow: "15px 15px 0 var(--ink)" }} 
+              transition={{ type: "spring", stiffness: 400, damping: 15 }}
+              style={{ perspective: 900 }}>
               <div className="tone toneband" />
               <div className="pcard-top">
                 <div style={{display: 'flex', flexDirection: 'column', gap: '4px'}}>
@@ -802,8 +804,8 @@ function App() {
           <div className="goals">
             {GOALS.map((g, i) => (
               <motion.article className="goal" key={g.title} variants={riseIn} custom={i} {...inViewProps}
-                whileHover={{ x: -3, y: -3, boxShadow: "9px 9px 0 var(--ink)" }}
-                transition={{ type: "spring", stiffness: 300, damping: 24 }}
+                whileHover={{ scale: 1.02, y: -8, boxShadow: "12px 12px 0 var(--ink)" }}
+                transition={{ type: "spring", stiffness: 400, damping: 14 }}
                 style={{display: 'flex', flexDirection: 'column', gap: '20px', gridTemplateColumns: '1fr'}}>
                 <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '20px'}}>
                   <div style={{flex: '1 1 400px'}}>
@@ -857,7 +859,8 @@ function App() {
           <div className="cabinet">
             {CABINET.map((c, i) => (
               <motion.div className="trophy" key={c.title} variants={riseIn} custom={i} {...inViewProps}
-                whileHover={{ backgroundColor: "var(--paper-2)" }}>
+                whileHover={{ scale: 1.05, y: -4, backgroundColor: "var(--paper-2)", boxShadow: "0 10px 20px -5px var(--ink)" }}
+                transition={{ type: "spring", stiffness: 400, damping: 14 }}>
                 <div className="yr num">{c.yr}</div>
                 <h3>{c.title}</h3>
                 <span>{c.by}</span>
