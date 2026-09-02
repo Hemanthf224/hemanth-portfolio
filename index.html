@@ -275,27 +275,27 @@ const RADAR_LABELS = ["ML", "DATA", "ALGO", "API", "SYS", "UI"];
 
 const SQUAD = [
   { x: 7,  y: 50, no: "1",  abbr: "GK",   name: "DSA & Systems", kind: "Goalkeeper · Fundamentals", v: 85,
-    note: "Data Structures & Algorithms, Operating Systems, Computer Networks and DBMS — the base every other position is built on." },
+    note: "Data Structures & Algorithms, Operating Systems, Computer Networks and DBMS — the base every other position is built on.", deps: [] },
   { x: 24, y: 16, no: "2",  abbr: "HDFS", name: "Hadoop HDFS", kind: "Right back · Storage", v: 80,
-    note: "Distributed storage under the taxi pipeline — 17 GB of trip data staged for Spark to read." },
+    note: "Distributed storage under the taxi pipeline — 17 GB of trip data staged for Spark to read.", deps: ["SPRK"] },
   { x: 20, y: 38, no: "4",  abbr: "SPRK", name: "Apache Spark", kind: "Centre back · Compute", v: 85,
-    note: "Processed 11M+ records and drove the demand, fare and ETA models through Spark MLlib." },
+    note: "Processed 11M+ records and drove the demand, fare and ETA models through Spark MLlib.", deps: ["HDFS", "KFKA"] },
   { x: 20, y: 62, no: "5",  abbr: "KFKA", name: "Kafka", kind: "Centre back · Streaming", v: 78,
-    note: "Streaming ingestion for near-real-time prediction, feeding the pipeline as trips arrive." },
+    note: "Streaming ingestion for near-real-time prediction, feeding the pipeline as trips arrive.", deps: ["SPRK"] },
   { x: 24, y: 84, no: "3",  abbr: "DOCK", name: "Docker & Git", kind: "Left back · Delivery", v: 82,
-    note: "Containerised services and version control — how every project actually ships and reruns." },
+    note: "Containerised services and version control — how every project actually ships and reruns.", deps: ["API"] },
   { x: 46, y: 24, no: "6",  abbr: "JAVA", name: "Java", kind: "Midfield · Language", v: 85,
-    note: "Object-oriented core: algorithms coursework and application building." },
+    note: "Object-oriented core: algorithms coursework and application building.", deps: ["SPRK"] },
   { x: 44, y: 50, no: "8",  abbr: "API",  name: "FastAPI & REST", kind: "Midfield · Backend", v: 86,
-    note: "The link between models and users: REST services with sub-100 ms responses on the IDS project." },
+    note: "The link between models and users: REST services with sub-100 ms responses on the IDS project.", deps: ["PY", "C++"] },
   { x: 46, y: 76, no: "10", abbr: "C++",  name: "C++ & CUDA", kind: "Midfield · Systems", v: 80,
-    note: "GPU traversal kernels and a thread-pool scheduler in the Adaptive Graph Engine, bridged with PyBind11." },
+    note: "GPU traversal kernels and a thread-pool scheduler in the Adaptive Graph Engine, bridged with PyBind11.", deps: ["API"] },
   { x: 70, y: 20, no: "7",  abbr: "PNDS", name: "Pandas", kind: "Right wing · Data prep", v: 84,
-    note: "Feature engineering and analysis across every dataset — fraud, network traffic and trips." },
+    note: "Feature engineering and analysis across every dataset — fraud, network traffic and trips.", deps: ["PY"] },
   { x: 76, y: 50, no: "9",  abbr: "PY",   name: "Python", kind: "Striker · Main language", v: 90,
-    note: "The finisher. Every flagship project runs on it, from model training to the API layer." },
+    note: "The finisher. Every flagship project runs on it, from model training to the API layer.", deps: ["API", "PNDS", "SKL", "C++"] },
   { x: 70, y: 80, no: "11", abbr: "SKL",  name: "Scikit-learn", kind: "Left wing · Modelling", v: 88,
-    note: "Classification, thresholds and evaluation — the models behind 99.2% accuracy on CICIDS2017." }
+    note: "Classification, thresholds and evaluation — the models behind 99.2% accuracy on CICIDS2017.", deps: ["PY", "PNDS"] }
 ];
 const BENCH = [
   { name: "TensorFlow", v: 80, kind: "Bench · Deep learning", note: "Neural network coursework and experimentation." },
@@ -515,6 +515,17 @@ function Formation({ running }) {
             <rect x="700" y="140" width="88" height="220" />
             <rect x="756" y="200" width="32" height="100" />
           </g>
+          <g>
+            {SQUAD.map(p => {
+              if (sel.deps && sel.deps.includes(p.abbr)) {
+                return <motion.line key={"pass-"+p.abbr} x1={sel.x*8} y1={sel.y*5} x2={p.x*8} y2={p.y*5} stroke="var(--ink)" strokeWidth="4" strokeDasharray="8 8" initial={{pathLength: 0}} animate={{pathLength: 1}} transition={{duration: 0.6}} />;
+              }
+              if (p.deps && p.deps.includes(sel.abbr)) {
+                return <motion.line key={"recv-"+p.abbr} x1={p.x*8} y1={p.y*5} x2={sel.x*8} y2={sel.y*5} stroke="var(--ink)" strokeWidth="4" strokeDasharray="8 8" initial={{pathLength: 0}} animate={{pathLength: 1}} transition={{duration: 0.6}} />;
+              }
+              return null;
+            })}
+          </g>
         </svg>
 
         {SQUAD.map((p, i) => (
@@ -726,22 +737,35 @@ function App() {
               whileHover={{ rotateY: 4, rotateX: -3 }} style={{ perspective: 900 }}>
               <div className="tone toneband" />
               <div className="pcard-top">
-                <div>
-                  <div className="ovr"><Count to={86} /></div>
-                  <div className="lbl" style={{ marginTop: 6 }}>CAM · AI/DS</div>
+                <div style={{display: 'flex', flexDirection: 'column', gap: '4px'}}>
+                  <div className="ovr"><span style={{fontSize: '24px', verticalAlign: 'top', color: 'var(--ink-soft)'}}>OVR</span><Count to={88} /></div>
+                  <div style={{fontFamily: 'Anton', fontSize: '24px', color: 'var(--ink-soft)', lineHeight: 1}}>POT 94</div>
+                  <div className="lbl" style={{ marginTop: 6, background: 'var(--ink)', color: 'var(--paper)', padding: '2px 6px', display: 'inline-block', width: 'fit-content' }}>ELITE PROSPECT</div>
                 </div>
-                <div className="pcard-name">Hemanth<br />Reddy</div>
+                <div style={{margin: '0 auto'}}>
+                    <div style={{width: '90px', height: '90px', borderRadius: '50%', border: '3px solid var(--ink)', background: 'var(--rule)', display: 'grid', placeItems: 'center', overflow: 'hidden'}}>
+                        <svg viewBox="0 0 24 24" width="60" height="60" fill="var(--paper)"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                    </div>
+                </div>
+                <div className="pcard-name">Hemanth<br />Reddy<br /><span style={{fontFamily: 'Zen Kaku Gothic New', fontSize: '14px', fontWeight: 'bold', color: 'var(--ink-soft)'}}>#10 STRIKER</span></div>
               </div>
               <div className="radar-box"><Radar /></div>
               <div className="attrs">
                 {ATTRS.map(a => (
-                  <div className="attr" key={a.k}><b><Count to={a.v} /></b><span className="lbl">{a.k}</span></div>
+                  <div className="attr" key={a.k}>
+                    <b><Count to={a.v} /></b>
+                    <div style={{flex: 1}}>
+                      <span className="lbl">{a.k}</span>
+                      <div style={{height: '4px', background: 'var(--rule)', marginTop: '2px'}}><motion.div initial={{scaleX: 0}} whileInView={{scaleX: a.v/100}} style={{height: '100%', background: 'var(--ink)', transformOrigin: 'left'}} viewport={{once: true}} transition={{duration: 1, delay: 0.5}} /></div>
+                    </div>
+                  </div>
                 ))}
               </div>
               <div className="meta">
-                <div><dt className="lbl">Club</dt><dd>Amrita Vishwa Vidyapeetham</dd></div>
-                <div><dt className="lbl">Contract</dt><dd className="num">Aug 2024 — May 2028</dd></div>
-                <div><dt className="lbl">Foot</dt><dd>Python / Java</dd></div>
+                <div><dt className="lbl">Age</dt><dd className="num">20</dd></div>
+                <div><dt className="lbl">Location</dt><dd>India</dd></div>
+                <div><dt className="lbl">Degree</dt><dd>B.Tech AI &amp; DS</dd></div>
+                <div><dt className="lbl">Specialization</dt><dd>Machine Learning</dd></div>
               </div>
             </motion.div>
 
@@ -771,21 +795,32 @@ function App() {
             {GOALS.map((g, i) => (
               <motion.article className="goal" key={g.title} variants={riseIn} custom={i} {...inViewProps}
                 whileHover={{ x: -3, y: -3, boxShadow: "9px 9px 0 var(--ink)" }}
-                transition={{ type: "spring", stiffness: 300, damping: 24 }}>
-                <div>
-                  <span className="lbl">{g.kind}</span>
-                  <h3>{g.title}</h3>
-                  <p>{g.lead}</p>
-                  <ul>{g.points.map(p => <li key={p}>{p}</li>)}</ul>
-                  <div className="tech">{g.tech.map(t => <i key={t}>{t}</i>)}</div>
-                </div>
-                <div className="headline-stat">
-                  <b>{g.stat}</b><span className="lbl">{g.statLabel}</span>
-                  <div className="more">
-                    {g.more.map(([k, v]) => (
-                      <div key={k}><span className="lbl">{k}</span><span className="num">{v}</span></div>
-                    ))}
+                transition={{ type: "spring", stiffness: 300, damping: 24 }}
+                style={{display: 'flex', flexDirection: 'column', gap: '20px', gridTemplateColumns: '1fr'}}>
+                <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '20px'}}>
+                  <div style={{flex: '1 1 400px'}}>
+                    <span className="lbl" style={{background: 'var(--ink)', color: 'var(--paper)', padding: '4px 8px'}}>{g.kind}</span>
+                    <h3 style={{fontSize: 'clamp(32px, 4vw, 48px)', marginTop: '16px', lineHeight: 1}}>{g.title}</h3>
+                    <p style={{fontSize: '18px', marginTop: '16px', color: 'var(--ink)'}}>{g.lead}</p>
+                    <div style={{display: 'flex', gap: '10px', marginTop: '20px', flexWrap: 'wrap'}}>
+                      <a href="#" className="btn">CASE STUDY →</a>
+                      <a href="#" className="btn hollow">GitHub</a>
+                      <a href="#" className="btn hollow">Live Demo</a>
+                    </div>
                   </div>
+                  <div className="headline-stat" style={{borderLeft: '4px solid var(--ink)', paddingLeft: '30px', minWidth: '220px', borderTop: 'none', margin: 0}}>
+                    <b style={{fontSize: 'clamp(56px, 6vw, 82px)', letterSpacing: '-0.02em'}}>{g.stat}</b><span className="lbl">{g.statLabel}</span>
+                    <div className="more" style={{marginTop: '24px'}}>
+                      {g.more.map(([k, v]) => (
+                        <div key={k} style={{borderTop: '2px solid var(--rule)', paddingTop: '10px', marginBottom: '10px', display: 'flex', justifyContent: 'space-between', fontSize: '15px'}}><span className="lbl">{k}</span><span className="num" style={{fontWeight: 'bold'}}>{v}</span></div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+                <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '20px', background: 'var(--paper-2)', padding: '24px', border: '3px solid var(--rule)', marginTop: '10px'}}>
+                   <div><strong className="lbl">PROBLEM</strong><p style={{fontSize: '14px', marginTop: '8px', color: 'var(--ink-soft)'}}>{g.points[0]}</p></div>
+                   <div><strong className="lbl">APPROACH</strong><p style={{fontSize: '14px', marginTop: '8px', color: 'var(--ink-soft)'}}>{g.points[1] || "Engineered a robust pipeline and architecture to handle the scale and latency requirements."}</p></div>
+                   <div><strong className="lbl">STACK</strong><div className="tech" style={{marginTop: '8px'}}>{g.tech.map(t => <i key={t}>{t}</i>)}</div></div>
                 </div>
               </motion.article>
             ))}
