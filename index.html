@@ -669,7 +669,7 @@ function App() {
           </nav>
           <div className="controls">
             <div className="stat-online"><div className="stat-dot"></div>{timeStr || "ONLINE"}</div>
-            <a href="https://linkedin.com/in/hemanthreddy" className="tgl" style={{textDecoration:'none', marginRight: '6px'}}>RESUME ⬇</a>
+            <a href="M%20HEMANTH%20REDDY.pdf" className="tgl" style={{textDecoration:'none', marginRight: '6px'}} target="_blank" rel="noreferrer">RESUME ⬇</a>
             <motion.button className="tgl" whileTap={{ scale: .94 }}
               onClick={() => setThemeIndex(i => (i + 1) % THEMES.length)}>{themeName.toUpperCase()}</motion.button>
             <motion.button className="tgl" aria-pressed={running} whileTap={{ scale: .94 }}
@@ -884,7 +884,7 @@ function App() {
               {[["mailto:hemanthreddy48823@gmail.com", "hemanthreddy48823@gmail.com", ""],
                 ["tel:+919618331429", "+91 96183 31429", " hollow"],
                 ["https://github.com/Hemanthf224", "GitHub", " hollow"],
-                ["https://linkedin.com/in/hemanth-reddy", "LinkedIn", " hollow"]].map(([href, label, cls]) => (
+                ["https://www.linkedin.com/in/hemanth-reddy-9517b0340/", "LinkedIn", " hollow"]].map(([href, label, cls]) => (
                 <motion.a key={label} className={"btn" + cls} href={href}
                   target={href.startsWith("http") ? "_blank" : undefined}
                   rel={href.startsWith("http") ? "noopener" : undefined}
