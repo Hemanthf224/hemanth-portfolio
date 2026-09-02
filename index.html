@@ -65,7 +65,16 @@ section,footer{background:linear-gradient(90deg,
   color-mix(in srgb,var(--paper) 70%,transparent) 100%)}
 
 /* ══ bar ════════════════════════════════════════════════════════════════ */
-header.bar{position:sticky;top:0;z-index:40;background:var(--paper);border-bottom:3px solid var(--rule)}
+header.bar{position:fixed;top:16px;left:50%;transform:translateX(-50%);z-index:50;background:var(--paper);border:3px solid var(--rule);box-shadow:var(--shadow);width:calc(100% - 32px);max-width:1180px;}
+
+.ticker-wrap{overflow:hidden;background:var(--ink);color:var(--paper);padding:8px 0;display:flex;white-space:nowrap;border-bottom:3px solid var(--rule);border-top:3px solid var(--rule);margin-bottom:30px}
+.ticker-in{display:inline-flex;animation:ticker 20s linear infinite;}
+@keyframes ticker { 0% { transform: translate3d(0, 0, 0); } 100% { transform: translate3d(-50%, 0, 0); } }
+.ticker-item{padding:0 24px;font-family:"Anton",sans-serif;font-size:24px;letter-spacing:.08em;line-height:1}
+
+.stat-online{display:flex;align-items:center;gap:6px;font-family:"Zen Kaku Gothic New",sans-serif;font-weight:700;font-size:10px;text-transform:uppercase;letter-spacing:.1em;margin-right:12px}
+.stat-dot{width:8px;height:8px;background-color:#00ff00;border-radius:50%;animation:pulse 2s infinite}
+@keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.4; } 100% { opacity: 1; } }
 .bar-in{max-width:1180px;margin:0 auto;padding:10px 26px;display:flex;align-items:center;gap:18px}
 .crest{display:flex;align-items:center;gap:11px;text-decoration:none}
 .crest-mark{width:34px;height:34px;display:grid;place-items:center;background:var(--ink);color:var(--paper);
@@ -581,6 +590,23 @@ function App() {
   }, [mode]);
   useEffect(() => { try { localStorage.setItem("mhr-motion", running ? "1" : "0"); } catch (e) {} }, [running]);
 
+  const [timeStr, setTimeStr] = useState("");
+  useEffect(() => {
+    const t = setInterval(() => setTimeStr(new Date().toLocaleTimeString('en-US', {hour:'2-digit', minute:'2-digit', timeZone:'Asia/Kolkata'}) + " IST"), 1000);
+    return () => clearInterval(t);
+  }, []);
+
+  useEffect(() => {
+    const handleKey = (e) => {
+      if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+      if (e.key === '1') window.location.hash = "#card";
+      if (e.key === '2') window.location.hash = "#formation";
+      if (e.key === '3') window.location.hash = "#goals";
+    };
+    window.addEventListener("keydown", handleKey);
+    return () => window.removeEventListener("keydown", handleKey);
+  }, []);
+
   const { scrollYProgress, scrollY } = useScroll();
   const bar = useSpring(scrollYProgress, { stiffness: 120, damping: 26, restDelta: .001 });
   const parallax = useSpring(useTransform(scrollY, [0, 3000], [0, 190]), { stiffness: 60, damping: 20 });
@@ -617,6 +643,8 @@ function App() {
             ))}
           </nav>
           <div className="controls">
+            <div className="stat-online"><div className="stat-dot"></div>{timeStr || "ONLINE"}</div>
+            <a href="#" className="tgl" style={{textDecoration:'none', marginRight: '6px'}}>RESUME ⬇</a>
             <motion.button className="tgl" aria-pressed={isInk} whileTap={{ scale: .94 }}
               onClick={() => setMode(isInk ? "paper" : "ink")}>{isInk ? "Paper" : "Ink"}</motion.button>
             <motion.button className="tgl" aria-pressed={running} whileTap={{ scale: .94 }}
@@ -627,13 +655,28 @@ function App() {
       </header>
 
       <main id="top">
-        <div className="hero">
+        <div className="hero" style={{paddingTop: '160px'}}>
+          <div className="ticker-wrap" aria-hidden="true">
+            <div className="ticker-in">
+              {Array.from({length: 4}).map((_, i) => (
+                <React.Fragment key={i}>
+                  <div className="ticker-item">AI</div><div className="ticker-item">·</div>
+                  <div className="ticker-item">ML</div><div className="ticker-item">·</div>
+                  <div className="ticker-item">SYSTEMS</div><div className="ticker-item">·</div>
+                  <div className="ticker-item">BIG DATA</div><div className="ticker-item">·</div>
+                  <div className="ticker-item">CUDA</div><div className="ticker-item">·</div>
+                  <div className="ticker-item">BACKEND</div><div className="ticker-item">·</div>
+                </React.Fragment>
+              ))}
+            </div>
+          </div>
           <div className="wrap">
             <motion.div className="kicker" initial={{ opacity: 0 }} animate={{ opacity: 1 }}
               transition={{ duration: .6, delay: .1 }}>
               <span className="inv lbl" style={{ color: "var(--paper)" }}>Striker #10</span>
               <span className="jp">ストライカー・エゴイスト</span>
               <span className="lbl">AI &amp; Data Science · Telangana, India</span>
+              <span className="lbl" style={{border: '1px solid var(--ink)', padding: '2px 6px'}}>Press 1, 2, 3 to navigate</span>
             </motion.div>
 
             <h1>
