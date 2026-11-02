@@ -1,24 +1,23 @@
 <div align="center">
 
-# ⚽ MUDIAM HEMANTH REDDY
-### `AI & SYSTEMS ENGINEER` • `TACTICAL #10 STRIKER`
+# Mudiam Hemanth Reddy
+### AI & Systems Engineer | High-Performance Computing & Distributed Systems
 
 [![GitHub](https://img.shields.io/badge/GitHub-Hemanthf224-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Hemanthf224)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Hemanth_Reddy-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/hemanth-reddy-9517b0340/)
 [![Email](https://img.shields.io/badge/Email-hemanthredy48823%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:hemanthredy48823@gmail.com)
-[![Resume](https://img.shields.io/badge/Scouting_Report-Download_Resume-00E5FF?style=for-the-badge&logo=adobe-acrobat-reader&logoColor=black)](M%20HEMANTH%20REDDY.pdf)
+[![Resume](https://img.shields.io/badge/Resume-Download_PDF-00E5FF?style=for-the-badge&logo=adobe-acrobat-reader&logoColor=black)](M%20HEMANTH%20REDDY.pdf)
 
 <br/>
 
-[![Status](https://img.shields.io/badge/TRANSFER_WINDOW-OPEN-00E5FF?style=flat-square&labelColor=040914)](mailto:hemanthredy48823@gmail.com)
-[![Tech Stack](https://img.shields.io/badge/STACK-Python%20%7C%20CUDA%20%7C%20Spark%20%7C%20FastAPI-E63946?style=flat-square&labelColor=040914)](https://github.com/Hemanthf224)
-[![UI Engine](https://img.shields.io/badge/AESTHETIC-Dark_Glassmorphism_•_3D_Tilt-F9D342?style=flat-square&labelColor=040914)](index.html)
-[![Education](https://img.shields.io/badge/AMRITA-B.Tech_AI_%26_DS_(8.26_CGPA)-00FF41?style=flat-square&labelColor=040914)](https://www.amrita.edu)
-[![Build](https://img.shields.io/badge/ARCHITECTURE-Zero_Build_Standalone-blueviolet?style=flat-square&labelColor=040914)](index.html)
+[![Status](https://img.shields.io/badge/STATUS-Available_for_SWE_%26_AI_Roles-10B981?style=flat-square&labelColor=0A0E17)](mailto:hemanthredy48823@gmail.com)
+[![Education](https://img.shields.io/badge/AMRITA-B.Tech_AI_%26_DS_(8.26_CGPA)-3B82F6?style=flat-square&labelColor=0A0E17)](https://www.amrita.edu)
+[![Core Stack](https://img.shields.io/badge/CORE_STACK-C++%20%7C%20CUDA%20%7C%20Python%20%7C%20Spark%20%7C%20FastAPI-6366F1?style=flat-square&labelColor=0A0E17)](https://github.com/Hemanthf224)
+[![Architecture](https://img.shields.io/badge/PORTFOLIO-Zero_Build_React_18_%2B_Framer_Motion-A855F7?style=flat-square&labelColor=0A0E17)](index.html)
 
 <br/>
 
-> *"Bridging high-performance GPU systems, big data distributed pipelines, and intrusion detection AI with tactical precision."*
+> *"Bridging low-level hardware acceleration (CUDA, C++) with distributed big data pipelines (Spark, Kafka) and low-latency machine learning microservices."*
 
 </div>
 
@@ -26,261 +25,184 @@
 
 ## 📌 Table of Contents
 
-- [🏟️ The Concept: Engineering as a Tactical Match](#️-the-concept-engineering-as-a-tactical-match)
-- [⚡ The Pitch: 4-3-3 Tactical Formation](#-the-pitch-4-3-3-tactical-formation)
-- [🎯 Goals Scored: Flagship Projects & Architectures](#-goals-scored-flagship-projects--architectures)
-  - [01. AI Cyberattack Detection (SDN-OSHLD)](#1-ai-cyberattack-detection-sdn-oshld)
-  - [02. Real-Time Taxi Demand & Fare Streaming Pipeline](#2-real-time-taxi-demand--fare-streaming-pipeline)
-  - [03. Adaptive Graph Engine (CUDA / C++)](#3-adaptive-graph-engine-cuda--c)
-  - [04. EV Lateral Stability via NMPC (TVC + RWS)](#4-ev-lateral-stability-via-nmpc-tvc--rws)
-- [🎨 Matchday Kits (Interactive Multi-Theme Engine)](#-matchday-kits-interactive-multi-theme-engine)
-- [📊 Player Card, Bento KPIs & Radar Scouting](#-player-card-bento-kpis--radar-scouting)
-- [🏆 The Trophy Cabinet & Honours](#-the-trophy-cabinet--honours)
-- [📜 Match Log & Career History](#-match-log--career-history)
-- [🚀 Quickstart & Standalone Architecture](#-quickstart--standalone-architecture)
-- [📬 Transfer Inquiries & Scout Me](#-transfer-inquiries--scout-me)
+- [Overview & Technical Focus](#-overview--technical-focus)
+- [Key Engineering Impact & Metrics](#-key-engineering-impact--metrics)
+- [Featured Engineering Projects](#-featured-engineering-projects)
+  - [1. AI Network Intrusion Detection System (SDN-OSHLD)](#1-ai-network-intrusion-detection-system-sdn-oshld)
+  - [2. Distributed Real-Time Mobility & Fare Engine](#2-distributed-real-time-mobility--fare-engine)
+  - [3. Adaptive GPU Graph Traversal Engine (CUDA / C++)](#3-adaptive-gpu-graph-traversal-engine-cuda--c)
+  - [4. Electric Vehicle Stability via NMPC (TVC + RWS)](#4-electric-vehicle-stability-via-nmpc-tvc--rws)
+- [System Architecture & Technical Arsenal](#-system-architecture--technical-arsenal)
+- [Professional Experience & Education](#-professional-experience--education)
+- [Portfolio Features & Design System](#-portfolio-features--design-system)
+- [Quickstart & Local Preview](#-quickstart--local-preview)
+- [Contact & Connect](#-contact--connect)
 
 ---
 
-## 🏟️ The Concept: Engineering as a Tactical Match
+## 💻 Overview & Technical Focus
 
-Most portfolios are static CV dumps. This portfolio reimagines **systems design, distributed computing, and applied machine learning** as a high-intensity football match:
+I am an **AI & Systems Engineer** with hands-on experience designing and implementing high-throughput, low-latency computational systems:
 
-- **The Pitch**: Systems are living organisms. Distributed data clusters stage the ball, backend microservices distribute the play, and low-level kernels execute the final strike.
-- **The Striker (#10)**: Fast, decisive engineering across Python, C++, and CUDA that solves architectural bottlenecks and scores in production.
-- **The Matchday Kits**: Real-time theme switching across 4 bespoke visual profiles—from cyber glassmorphism to brutalist manga high contrast.
+* **High-Performance Computing (HPC)**: Writing parallel GPU kernels in CUDA and C++ with memory coalescing, thread-pool task scheduling, and PyBind11 zero-copy bridges.
+* **Distributed Big Data Engineering**: Designing batch and streaming pipelines in Apache Spark and Kafka to process tens of millions of records over Hadoop HDFS.
+* **Applied Machine Learning & Microservices**: Building production-shaped FastAPI services that serve trained tree ensembles, gradient boosting models, and explainability layers (SHAP) under 100ms latency budgets.
+
+---
+
+## 📊 Key Engineering Impact & Metrics
 
 ```
-                      [ PITCH OVERVIEW: 4-3-3 FORMATION ]
-
-                                    [9] PYTHON
-                                    (The Striker)
-                                          ▲
-                     [7] PANDAS ◄─────────┴─────────► [11] SCIKIT-LEARN
-                     (Right Wing)                       (Left Wing)
-                                          │
-                                    [8] FASTAPI
-                                    (Playmaker)
-                                          ▲
-                      [6] JAVA ◄──────────┴──────────► [10] C++ & CUDA
-                     (Midfield)                         (Systems Engine)
-                                          │
-                     [2] HDFS ──── [4] SPARK ──── [5] KAFKA ──── [3] DOCKER
-                     (Storage)     (Compute)     (Stream)       (Delivery)
-                                          ▲
-                                          │
-                                    [1] DSA & OS
-                                   (The Goalkeeper)
+┌───────────────────────────┬───────────────────────────┬───────────────────────────┬───────────────────────────┐
+│   99.2% ACCURACY          │   17 GB+ DATA STREAMED    │   CUDA PARALLEL KERNELS   │   8.26 CGPA (AMRITA)      │
+│   Network Intrusion Detection │   11M+ Records via Spark  │   BFS, PageRank, SSSP     │   B.Tech AI & Data Science│
+│   CICIDS2017 & FastAPI    │   & Kafka Event Bus       │   NVIDIA GPU Accelerated  │   Strong CS Fundamentals  │
+└───────────────────────────┴───────────────────────────┴───────────────────────────┴───────────────────────────┘
 ```
 
 ---
 
-## ⚡ The Pitch: 4-3-3 Tactical Formation
+## 🚀 Featured Engineering Projects
 
-Every technology in the stack occupies a deliberate tactical position on the pitch:
+### 1. AI Network Intrusion Detection System (SDN-OSHLD)
+> **Asynchronous machine learning intrusion detection service deployed via Docker container for software-defined network traffic.**
 
-| Position | Number | Technology | Tactical Role & Responsibility |
-|:---|:---:|:---|:---|
-| **🧤 Goalkeeper** | `#1` | **DSA & Systems Core** | Data structures, algorithms, operating systems, and computer networks—the unyielding foundation. |
-| **🛡️ Right Back** | `#2` | **Hadoop HDFS** | Distributed data staging layer handling 17+ GB of raw batch feeds. |
-| **🛡️ Centre Back** | `#4` | **Apache Spark** | Distributed compute engine churning through 11M+ rows via Spark MLlib. |
-| **🛡️ Centre Back** | `#5` | **Apache Kafka** | Real-time event streaming backbone feeding dynamic ingestion pipelines. |
-| **🛡️ Left Back** | `#3` | **Docker & Git** | Immutable containerization and rigorous version-controlled CI/CD delivery. |
-| **🎯 Midfield** | `#6` | **Java** | High-throughput object-oriented systems and algorithmic computing. |
-| **🎯 Central Mid** | `#8` | **FastAPI & REST** | Ultra-low latency microservices delivering sub-100ms model inferences. |
-| **🎯 Defensive Mid**| `#10` | **C++ & CUDA** | Custom GPU traversal kernels and thread-pool scheduling bridged via PyBind11. |
-| **⚡ Right Wing** | `#7` | **Pandas & NumPy** | High-velocity exploratory analysis and feature engineering pipelines. |
-| **⚡ Striker** | `#9` | **Python (Finisher)** | The captain. Orchestrating model training, orchestration, and API services. |
-| **⚡ Left Wing** | `#11`| **Scikit-learn** | Predictive classification, cross-validation, and decision threshold calibration. |
+```
+[ Raw Network Telemetry ] ──► [ Feature Extraction ] ──► [ Ensemble Classifier ] ──► [ FastAPI Async REST ] ──► [ OpenFlow Switch ]
+     Packet Capture (PCAP)       Flow Normalization         99.2% Accuracy Model        <100ms Latency SLA         Threat Throttled
+```
 
-#### 🪑 The Bench (Super Subs)
-- **Deep Learning**: `TensorFlow` (Neural network architectures and deep learning models)
-- **Gradient Boosting**: `LightGBM` & `XGBoost` (Benchmark fraud detection algorithms)
-- **Explainability**: `SHAP` (Feature attribution and transparent risk scoring)
-- **JVM Data**: `Scala` (Spark jobs built for maximum cluster performance)
-- **Frontend**: `React 18`, `Framer Motion`, `Modern CSS Variables` (Tactical UI engineering)
+* **Problem**: Software-defined networks are vulnerable to high-throughput DDoS and lateral penetration. Traditional signature firewalls struggle against novel zero-day attack sequences.
+* **Architecture**: Trained tree-ensemble classifiers across three benchmark network flows. Packaged into an asynchronous FastAPI microservice containerized in Docker to ingest, extract telemetry features, and return classification flags with sub-100ms latency.
+* **Tech Stack**: `Python`, `Scikit-learn`, `Pandas`, `FastAPI`, `Docker`, `REST API`
+* **Benchmarks**: `99.2% Accuracy` | `<100ms Latency` | `3 Benchmark Datasets`
 
 ---
 
-## 🎯 Goals Scored: Flagship Projects & Architectures
-
-### ⚽ 1. AI Cyberattack Detection (SDN-OSHLD)
-> **A network intrusion detection system trained on CICIDS2017 and served as an enterprise-grade REST service.**
-
-```
-[ Raw Flow Telemetry ] ──► [ Feature Normalization ] ──► [ Ensemble Classifier ] ──► [ FastAPI Service ] ──► [ Alert Dashboard ]
-                                                           • 99.2% Accuracy            • <100ms Ingestion       • Mitigated Threat
-```
-
-- **Key Highlights**:
-  - Achieved **99.2% classification accuracy** across multi-class network assault vectors.
-  - Containerized with Docker and served through an asynchronous **FastAPI** pipeline.
-  - Engineered for real-time telemetry processing with **<100 ms latency**.
-- **Tech Stack**: `Python` • `Scikit-learn` • `Pandas` • `FastAPI` • `Docker`
-- **Key Metrics**: `99.2% Accuracy` | `<100 ms Response` | `3 Benchmark Datasets`
-
----
-
-### ⚽ 2. Real-Time Taxi Demand & Fare Streaming Pipeline
-> **Big data distributed pipeline predicting urban mobility demand, fare pricing, and trip duration.**
+### 2. Distributed Real-Time Mobility & Fare Engine
+> **End-to-end distributed data engineering pipeline processing 17 GB of urban mobility telemetry to forecast ride demand, dynamic surge multipliers, and ETA.**
 
 ```
 [ 17GB NYC TLC Feed ] ──► [ Kafka Topic Stream ] ──► [ Apache Spark MLlib ] ──► [ HDFS Data Lake ] ──► [ Real-Time Surge & ETA ]
-                             • Live Telemetry          • Distributed Workers      • Parquet Optimized       • Batch & Stream Served
+     Live Event Queue          Partition Consumer         Distributed Workers       Parquet Optimized         Sub-second API Served
 ```
 
-- **Key Highlights**:
-  - Distributed batch & streaming pipeline crunching **17 GB** of raw geospatial trip logs.
-  - Trained regression and clustering estimators across **11,000,000+ trip records**.
-  - Integrated weather signals and spatial zone matrices into Spark MLlib pipelines.
-- **Tech Stack**: `Hadoop HDFS` • `Apache Spark` • `Kafka` • `Scala` • `Spark MLlib`
-- **Key Metrics**: `17 GB Data` | `11M+ Records` | `Distributed Cluster`
+* **Problem**: Ingesting high-velocity streaming ride telemetry and computing dynamic surge pricing and ETA across millions of events causes memory exhaustion on single-node instances.
+* **Architecture**: Staged raw datasets on Hadoop HDFS and built distributed Spark MLlib regression pipelines over 11,000,000+ ride records. Integrated Apache Kafka event streams to simulate real-time fleet telemetry with live weather and spatial zone feature joins.
+* **Tech Stack**: `Apache Spark`, `Hadoop HDFS`, `Kafka`, `Scala`, `Spark MLlib`, `Parquet`
+* **Benchmarks**: `17 GB Data` | `11,000,000+ Records` | `Distributed Cluster Workers`
 
 ---
 
-### ⚽ 3. Adaptive Graph Engine (CUDA / C++)
-> **GPU-accelerated parallel graph traversal running BFS, PageRank, and SSSP on NVIDIA hardware.**
+### 3. Adaptive GPU Graph Traversal Engine (CUDA / C++)
+> **High-throughput parallel graph analytics engine executing BFS, PageRank, and SSSP on NVIDIA hardware.**
 
 ```
-[ Graph Adjacency CSR ] ──► [ CUDA Parallel Kernels ] ──► [ Worker Pool Scheduler ] ──► [ PyBind11 Bridge ] ──► [ FastAPI Metrics ]
-                              • Warp-Level BFS              • Fault-Tolerant Tasks        • Zero-Copy Memory       • Real-Time Monitor
+[ CSR Adjacency Matrix ] ──► [ CUDA Kernel Blocks ] ──► [ Worker Pool Scheduler ] ──► [ PyBind11 C++ Bridge ] ──► [ Live Dashboard ]
+     Compressed Storage         Warp-Level Primitives      Failure-Tolerant Queue      Zero-Copy Memory Tensor     Telemetry Metrics
 ```
 
-- **Key Highlights**:
-  - Massive parallelism leveraging CUDA thread blocks and warp-level optimizations.
-  - Custom thread-pool scheduler managing concurrent workloads and recovering from worker failures.
-  - High-performance C++ backend bridged directly to Python/FastAPI via **PyBind11**.
-- **Tech Stack**: `C++` • `CUDA` • `PyBind11` • `FastAPI` • `GPU Kernels`
-- **Key Metrics**: `GPU Accelerated` | `3 Core Algorithms` | `Live Metrics Dashboard`
+* **Problem**: Massive graph traversals suffer from severe CPU cache thrashing, irregular memory access patterns, and single-thread execution bottlenecks.
+* **Architecture**: Custom CUDA kernels optimizing warp-level primitives and memory coalescing. Designed a C++ thread-pool scheduler with worker failure tolerance, bridged directly to a Python backend using PyBind11 for real-time telemetry streaming.
+* **Tech Stack**: `C++`, `CUDA`, `PyBind11`, `FastAPI`, `Parallel Computing`
+* **Benchmarks**: `CUDA Warp Acceleration` | `3 Core Graph Algorithms` | `Zero-Copy Memory Bridge`
 
 ---
 
-### ⚽ 4. EV Lateral Stability via NMPC (TVC + RWS)
-> **Independent MATLAB/Simulink framework uniting Torque Vectoring Control and Rear-Wheel Steering.**
+### 4. Electric Vehicle Stability via NMPC (TVC + RWS)
+> **MATLAB/Simulink framework uniting Torque Vectoring Control (TVC) and Rear-Wheel Steering (RWS) for extreme collision avoidance stability.**
 
 ```
-[ Driver Steering Angle ] ──► [ 2-DOF Vehicle Plant ] ──► [ PMP Solver (NMPC) ] ──► [ Differential Torque ] ──► [ Dynamic Yaw Lock ]
-                              • Fiala Non-Linear Tire     • Low-Latency Horizon       • Rear-Wheel Steer Angle   • Fishhook / DLC Test
+[ Steering & Yaw Inputs ] ──► [ 2-DOF Vehicle Plant ] ──► [ PMP Solver (NMPC) ] ──► [ Differential Torque ] ──► [ Dynamic Yaw Lock ]
+     Driver Maneuver             Fiala Non-Linear Tire       Low-Latency Horizon        Rear-Wheel Steer Angle     Extreme Maneuver Stability
 ```
 
-- **Key Highlights**:
-  - Formulated a 2-DOF vehicle dynamic plant with non-linear **Fiala tire mechanics** and dynamic axle load.
-  - Designed a **Pontryagin's Minimum Principle (PMP)** solver featuring soft sideslip relaxation.
-  - Validated under severe ISO double lane-change (DLC) and fishhook maneuvers.
-- **Tech Stack**: `MATLAB` • `Simulink` • `Nonlinear MPC` • `Vehicle Dynamics`
-- **Key Metrics**: `PMP Solver` | `2-DOF Dynamic Plant` | `Extreme Stability Benchmark`
+* **Problem**: Dynamic sideslip divergence and vehicle rollover during high-speed emergency collision avoidance maneuvers under non-linear tire saturation.
+* **Architecture**: Formulated a 2-DOF vehicle dynamic model incorporating non-linear Fiala tire mechanics, dynamic axle weight transfer, and reference yaw generation. Developed a low-latency Pontryagin's Minimum Principle (PMP) solver with soft sideslip constraints, validated under ISO double lane-change benchmarks.
+* **Tech Stack**: `MATLAB`, `Simulink`, `Nonlinear MPC`, `Vehicle Dynamics`
+* **Benchmarks**: `PMP Fast Solver` | `2-DOF Dynamic Plant` | `ISO Double Lane Change & Fishhook`
 
 ---
 
-## 🎨 Matchday Kits (Interactive Multi-Theme Engine)
+## 🛠️ System Architecture & Technical Arsenal
 
-The portfolio features a live theme cycler with instantaneous physics-based transitions across 4 unique kits:
-
-| Kit | Theme Name | Palette & Tone | Design Philosophy |
-|:---:|:---|:---|:---|
-| 🌌 | **Ink Mode** *(Default)* | Deep Navy (`#040914`), Neon Cyan (`#00E5FF`), Muted Slate | Glassmorphism, blurred acrylic surfaces (`backdrop-filter: blur(24px)`), luminous cyan glow. |
-| 🩸 | **Ego Mode** | Stark Paper (`#FAFAFA`), Deep Ink (`#0B0B0C`), Crimson (`#E63946`) | Manga brutalism, sharp contrast, hyper-bold borders inspired by *Blue Lock*. |
-| 📟 | **Matrix Mode** | True Black (`#090909`), Terminal Green (`#00FF41`), Deep Phosphor | Cyberpunk hacker terminal aesthetic with CRT screen phosphor glow. |
-| 👑 | **Gold Mode** | Matte Obsidian (`#0A0A0A`), Champagne Gold (`#F9D342`), Muted Ochre | Luxury high-roller aesthetic with soft gold specular reflections. |
+| Domain | Core Technologies & Primitives | Practical Applications |
+|:---|:---|:---|
+| **High-Performance & GPU Systems** | `C++`, `CUDA`, `PyBind11`, `POSIX Threads`, `Memory Coalescing` | GPU kernel optimizations, thread-pool scheduling, zero-copy Python tensor bindings. |
+| **Distributed Big Data & Streaming** | `Apache Spark`, `Hadoop HDFS`, `Apache Kafka`, `Scala`, `Parquet` | 17GB+ distributed batch ETL, Spark MLlib models, streaming telemetry ingestion. |
+| **Machine Learning & Modeling** | `Python`, `Scikit-learn`, `LightGBM`, `XGBoost`, `SHAP`, `SMOTE` | Multi-class attack classification, real-time financial fraud detection, explainable AI. |
+| **Backend & Infrastructure** | `FastAPI`, `REST APIs`, `Docker`, `Linux / Bash`, `Git / GitHub` | Sub-100ms ASGI microservices, containerized deployments, automated CI/CD workflows. |
 
 ---
 
-## 📊 Player Card, Bento KPIs & Radar Scouting
+## 📜 Professional Experience & Education
 
-### 🏅 Tactical Scouting Radar
-```
-                           AI / ML [88]
-                               ▲
-                              / \
-                SYS [80]     /   \     DATA [86]
-                    \       /     \       /
-                     \     /   •   \     /
-                      \   /         \   /
-              UI [78]  \ /           \ /  ALGO [85]
-                        ▼             ▼
-                           API [84]
-```
+### Experience
+* **AI & Data Science Intern** — *XYlofy AI* (2026 • Remote)
+  * Architected an end-to-end real-time financial fraud detection pipeline evaluating suspicious transactions.
+  * Benchmarked LightGBM, XGBoost, and Isolation Forest; tuned decision thresholds for severe class imbalance.
+  * Engineered SHAP explainability visualizations integrated into an interactive Streamlit risk assessment dashboard.
 
-### ⚡ Bento KPI Cards
-- 🛡️ **Cybersecurity AI**: `99.2% Accuracy` (CICIDS2017 benchmark • FastAPI microservice)
-- ⚡ **Big Data Streaming**: `17 GB Processed` (11M+ Records • Spark MLlib & Kafka)
-- 🚀 **GPU Systems**: `3 CUDA Kernels` (BFS, PageRank, SSSP • PyBind11 C++ bridge)
-- 🎓 **Academic Merit**: `8.26 CGPA` (Amrita Vishwa Vidyapeetham • B.Tech AI & Data Science)
+### Education
+* **B.Tech in Artificial Intelligence & Data Science** — *Amrita Vishwa Vidyapeetham* (2024 — 2028)
+  * **Current CGPA**: `8.26 / 10.0`
+  * **Core Computer Science**: Data Structures & Algorithms, Operating Systems, Database Management Systems, Computer Networks.
+  * **Advanced Electives**: Machine Learning, Deep Learning, Distributed Computing, Linear Algebra & Probability.
+* **Intermediate (Class 12 - MPC)** — *Narayana Junior College, Telangana* (`94.2%`)
 
----
-
-## 🏆 The Trophy Cabinet & Honours
-
-- **NVIDIA Deep Learning Institute**: Certificate in *Getting Started with AI on Jetson Nano*.
-- **XYlofy AI**: *AI & Data Analytics Internship Certificate* (Fraud Detection & Explainable AI).
-- **National-Level Hackathon**: Team Lead & Finalist.
-- **GenAI Job Simulation**: Certified in *GenAI Powered Data Analytics*.
+### Honors & Certifications
+* **NVIDIA Deep Learning Institute**: Certificate in *Getting Started with AI on Jetson Nano*.
+* **XYlofy AI**: *AI & Data Analytics Internship Certificate*.
+* **National-Level Hackathon**: Team Lead & Finalist.
+* **GenAI Powered Data Analytics**: Certified Simulation Completion.
 
 ---
 
-## 📜 Match Log & Career History
+## 🎨 Portfolio Features & Design System
 
-```
-2026 ────────── AI & Data Science Intern @ XYlofy AI (Remote)
-                • Built end-to-end real-time fraud detection with LightGBM, XGBoost & SMOTE.
-                • Implemented SHAP explainability dashboards on Streamlit.
-
-2024 - 2028 ─── B.Tech in Artificial Intelligence & Data Science
-                Amrita Vishwa Vidyapeetham | CGPA: 8.26 / 10.0
-                • Core: DSA, Operating Systems, DBMS, Networks, ML, Deep Learning.
-
-Intermediate ── Class 12 (MPC) — 94.2% | Narayana, Telangana
-Schooling ───── State Board | Sri Chaitanya School, Meerpet
-```
+The portfolio is built with a modern **Linear / Vercel design system**:
+* **Zero-Build Standalone Architecture**: Runs natively in the browser via React 18, Babel Standalone, and Framer Motion—no massive `node_modules` folder required.
+* **Interactive Developer Sandbox**: Live mock terminal executing simulated API requests (`POST /api/v1/detect-intrusion`), Spark cluster telemetry queries, and CUDA benchmark timings.
+* **Interactive Tech Stack Matrix**: Categorized technology filtering with animated proficiency meters and engineering context.
+* **Multi-Theme Engine**:
+  * 🖤 **Obsidian (Default)**: Deep midnight slate with electric cyan accents.
+  * ⚪ **Clean Light**: Minimalist paper white with cobalt blue accents.
+  * 🟣 **Electric Violet**: Deep space navy with vivid purple accents.
+  * 🟢 **Terminal Green**: Hacker terminal monochrome black and phosphor green.
 
 ---
 
-## 🚀 Quickstart & Standalone Architecture
+## 🚀 Quickstart & Local Preview
 
-This portfolio is built with a **zero-build standalone architecture**:
-- **No `node_modules` bloating your disk**.
-- Loaded directly in browser via unpkg CDN with **React 18**, **Babel Standalone**, and **Framer Motion**.
-- Instant boot time, zero bundler dependencies, effortlessly deployable to GitHub Pages, Vercel, Netlify, or Apache/Nginx.
+Because the portfolio uses a standalone zero-build architecture, you can launch it instantly with any local HTTP server:
 
-### Run Locally:
-
-#### Option 1: Python HTTP Server (Recommended)
 ```bash
 # Clone the repository
 git clone https://github.com/Hemanthf224/hemanth-portfolio.git
 
-# Navigate to project directory
+# Enter project directory
 cd hemanth-portfolio
 
-# Start a local web server
+# Launch with Python (built-in)
 python -m http.server 3000
 ```
-Then open `http://localhost:3000` in your browser.
-
-#### Option 2: Node.js `npx serve`
-```bash
-npx serve .
-```
-
-#### Option 3: Direct Browser Launch
-Simply double-click `index.html` to open it in Chrome, Edge, Safari, or Firefox!
+Open `http://localhost:3000` in your web browser.
 
 ---
 
-## 📬 Transfer Inquiries & Scout Me
+## 📬 Contact & Connect
 
-Looking for an engineer who combines **machine learning precision**, **distributed big data scale**, and **low-level systems speed**?
+I am actively open to software engineering internships, AI systems roles, and high-performance computing collaborations:
 
 <div align="center">
 
-[![Email Me](https://img.shields.io/badge/Direct_Inquiry-hemanthredy48823%40gmail.com-00E5FF?style=for-the-badge&logo=gmail&logoColor=black)](mailto:hemanthredy48823@gmail.com)
-[![Call Me](https://img.shields.io/badge/Direct_Phone-%2B91_96183_31429-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](tel:+919618331429)
+[![Email Me](https://img.shields.io/badge/Email-hemanthredy48823%40gmail.com-00E5FF?style=for-the-badge&logo=gmail&logoColor=black)](mailto:hemanthredy48823@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/Connect-LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/hemanth-reddy-9517b0340/)
+[![GitHub](https://img.shields.io/badge/Follow-GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Hemanthf224)
 
 <br/>
 
 **Mudiam Hemanth Reddy**  
-*#10 Striker • AI & Data Science*  
-Amrita Vishwa Vidyapeetham
+*AI & Systems Engineer* • Amrita Vishwa Vidyapeetham
 
 </div>
