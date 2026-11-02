@@ -973,64 +973,96 @@
     // Projects Data
     const PROJECTS = [
       {
-        id: "cybersec",
-        category: "Cybersecurity & Applied Machine Learning",
-        title: "AI Network Intrusion Detection System (SDN-OSHLD)",
-        lead: "A machine learning intrusion detection system trained on the CICIDS2017 benchmark dataset, detecting complex multi-class network attack vectors in software-defined network traffic.",
-        problem: "Software-defined networks are vulnerable to high-throughput DDoS and lateral penetration. Existing rule-based firewalls suffer from high false positives and fail against novel zero-day attack sequences.",
-        architecture: "Trained tree-ensemble classifiers across three benchmark network flows. Engineered an asynchronous FastAPI microservice containerized in Docker to ingest, extract telemetry features, and return classification flags with sub-100ms latency.",
+        id: "gpu",
+        category: "High-Performance Systems & GPU Acceleration",
+        title: "🔥 Adaptive GPU Graph Engine",
+        lead: "High-throughput graph processing engine that dynamically schedules work across CPU and GPU based on hardware topology and graph sparsity.",
+        problem: "Graph traversal on massive sparse adjacency matrices suffers from severe CPU cache thrashing, irregular memory access, and worker thread stalls.",
+        architecture: "Implemented custom CUDA kernels optimizing warp-level primitives and memory coalescing with OpenMP and MPI. Designed a C++ thread-pool scheduler with worker failure tolerance, bridged directly to Python for live telemetry.",
         stats: [
-          { val: "99.2%", label: "Classification Accuracy" },
-          { val: "<100 ms", label: "Inference Latency" },
-          { val: "3", label: "Network Benchmarks" }
+          { val: "CUDA", label: "Warp-Level Kernels" },
+          { val: "3", label: "Core Graph Algorithms" },
+          { val: "Active", label: "Development Status" }
         ],
-        stack: ["Python", "Scikit-learn", "Pandas", "FastAPI", "Docker", "REST API"],
-        github: "https://github.com/Hemanthf224"
+        stack: ["C++20", "CUDA", "OpenMP", "MPI", "PyBind11"],
+        github: "https://github.com/Hemanthf224/adaptive-graph-engine"
       },
       {
         id: "streaming",
-        category: "Distributed Big Data & Real-Time Streaming",
-        title: "Distributed Real-Time Mobility Demand & Fare Pipeline",
-        lead: "An end-to-end distributed data engineering pipeline processing 17 GB of urban mobility telemetry to predict hourly ride demand, surge fare multipliers, and trip duration.",
-        problem: "Processing massive NYC TLC ride datasets on single-node instances caused memory exhaustion and unacceptable query latency. Real-time fleet allocation requires continuous sub-second streaming ingestion.",
-        architecture: "Staged raw datasets on Hadoop HDFS and built distributed Spark MLlib regression pipelines over 11,000,000+ ride records. Integrated Apache Kafka event streams to simulate real-time fleet telemetry with live weather and spatial zone feature joins.",
+        category: "Distributed Big Data & Streaming",
+        title: "🚕 TaxiPulse: Big Data Pipeline",
+        lead: "Distributed real-time data engineering pipeline over 17GB+ (11M+ records) predicting hourly mobility demand, dynamic surge pricing, and trip duration.",
+        problem: "Single-node dataframes crash with out-of-memory errors on massive urban ride feeds. Real-time dispatching requires sub-second streaming ingestion.",
+        architecture: "Staged raw trip data on Hadoop HDFS and built distributed Spark MLlib regression pipelines over 11,000,000+ ride records. Integrated Apache Kafka event streams to simulate real-time fleet telemetry with live weather and spatial zone feature joins.",
         stats: [
-          { val: "17 GB", label: "Data Volume" },
+          { val: "17 GB+", label: "Data Volume" },
           { val: "11M+", label: "Records Processed" },
           { val: "Distributed", label: "Cluster Workers" }
         ],
-        stack: ["Apache Spark", "Hadoop HDFS", "Kafka", "Scala", "Spark MLlib", "Parquet"],
-        github: "https://github.com/Hemanthf224"
+        stack: ["Apache Spark", "Hadoop HDFS", "Kafka", "Scala", "Spark MLlib"],
+        github: "https://github.com/Hemanthf224/TaxiPulse_Bigdata"
       },
       {
-        id: "gpu",
-        category: "High-Performance Systems & GPU Acceleration",
-        title: "Adaptive GPU Graph Traversal Engine",
-        lead: "A CUDA-accelerated parallel graph processing engine executing Breadth-First Search (BFS), PageRank, and Single-Source Shortest Path (SSSP) algorithms on NVIDIA GPUs.",
-        problem: "Graph traversal on massive adjacency matrices suffers from severe CPU cache thrashing, irregular memory access patterns, and single-thread bottlenecks.",
-        architecture: "Implemented custom CUDA kernels optimizing warp-level primitives and memory coalescing. Designed a C++ thread-pool scheduler with worker failure tolerance, bridged directly to a Python backend using PyBind11 for real-time telemetry streaming.",
+        id: "cybersec",
+        category: "Cybersecurity & Applied Machine Learning",
+        title: "🛡️ SDN-OSHLD: Intrusion Detection",
+        lead: "Real-time network cyberattack detection system with 99.2% classification accuracy benchmarked on the CICIDS2017 dataset, served via FastAPI.",
+        problem: "Software-defined networks are vulnerable to high-throughput DDoS and lateral penetration. Traditional signature firewalls struggle against novel zero-day attack sequences.",
+        architecture: "Trained tree-ensemble classifiers across three benchmark network flows. Packaged into an asynchronous FastAPI microservice containerized in Docker to ingest, extract telemetry features, and return classification flags with sub-100ms latency.",
         stats: [
-          { val: "CUDA", label: "Warp-Level Acceleration" },
-          { val: "3", label: "Core Graph Algorithms" },
-          { val: "Zero-Copy", label: "PyBind11 C++ Bridge" }
+          { val: "99.2%", label: "Classification Accuracy" },
+          { val: "<100 ms", label: "Inference Latency" },
+          { val: "3", label: "Network Datasets" }
         ],
-        stack: ["C++", "CUDA", "PyBind11", "FastAPI", "Parallel Computing"],
-        github: "https://github.com/Hemanthf224"
+        stack: ["Python", "Scikit-learn", "Pandas", "FastAPI", "Docker"],
+        github: "https://github.com/Hemanthf224/SDN-OSHLD"
       },
       {
-        id: "nmpc",
-        category: "Nonlinear Control Systems & Simulation",
-        title: "Electric Vehicle Dynamic Stability via NMPC (TVC + RWS)",
-        lead: "An advanced MATLAB/Simulink framework uniting Torque Vectoring Control (TVC) and Rear-Wheel Steering (RWS) for EV lateral stability during extreme collision avoidance maneuvers.",
-        problem: "High-speed lane changes and emergency avoidance maneuvers can lead to severe sideslip, yaw rate divergence, and vehicle rollover under non-linear tire saturation.",
-        architecture: "Formulated a 2-DOF vehicle dynamic model incorporating non-linear Fiala tire mechanics, dynamic axle weight transfer, and reference yaw generation. Developed a low-latency Pontryagin's Minimum Principle (PMP) solver with soft sideslip constraints, validated under ISO double lane-change benchmarks.",
+        id: "fraud",
+        category: "Machine Learning & Explainable AI",
+        title: "💳 Fraud Detection AI System",
+        lead: "Real-time financial fraud detection system resolving severe class imbalance using SMOTE and shipping an interactive Streamlit risk dashboard.",
+        problem: "Extreme class imbalance (<0.2% fraud rate) leads to catastrophic false negative rates in financial fraud screening.",
+        architecture: "Evaluated LightGBM, XGBoost, and Isolation Forest with SMOTE synthetic resampling. Calibrated decision thresholds and applied SHAP explainable AI for transparent risk attribution.",
         stats: [
-          { val: "PMP", label: "Low-Latency NMPC Solver" },
-          { val: "2-DOF", label: "Nonlinear Plant" },
-          { val: "DLC & Fishhook", label: "ISO Maneuver Tests" }
+          { val: "SMOTE", label: "Class Balancing" },
+          { val: "SHAP", label: "Explainable Risk" },
+          { val: "XYlofy AI", label: "Internship Project" }
         ],
-        stack: ["MATLAB", "Simulink", "Nonlinear MPC", "Vehicle Dynamics"],
+        stack: ["LightGBM", "XGBoost", "Scikit-learn", "SHAP", "Streamlit"],
         github: "https://github.com/Hemanthf224"
+      }
+    ];
+
+    // Research Papers Data
+    const PAPERS = [
+      {
+        title: "Ornithopter Flight Dynamics (AJK-OFM)",
+        venue: "IEEE SPICES 2026, Paper ID 2458",
+        status: "Presented",
+        badge: "✅ Presented",
+        desc: "Nonlinear flight dynamics modeling and aerodynamic flapping frequency analysis for bio-inspired aerial vehicles."
+      },
+      {
+        title: "Ambient Monitoring Rover",
+        venue: "IEEE Conference",
+        status: "Revision",
+        badge: "🔄 In Revision",
+        desc: "Autonomous environmental telemetry collection platform with multi-sensor payload and distributed mesh reporting."
+      },
+      {
+        title: "FGAT-RL: Federated Learning for IoT Anomaly Detection",
+        venue: "Academic Research Paper",
+        status: "Writing",
+        badge: "✍️ Writing",
+        desc: "Graph attention network federated reinforcement learning architecture for privacy-preserving edge anomaly detection."
+      },
+      {
+        title: "QKD Eavesdropping Detection (Sequence-based QBER)",
+        venue: "Quantum Security Research Project",
+        status: "In Progress",
+        badge: "🔬 In Progress",
+        desc: "Quantum key distribution eavesdropping detection leveraging sequence-based quantum bit error rate analysis."
       }
     ];
 
@@ -1096,6 +1128,7 @@
                 <a href="#metrics" className="nav-link">Overview</a>
                 <a href="#projects" className="nav-link">Projects</a>
                 <a href="#skills" className="nav-link">Architecture</a>
+                <a href="#research" className="nav-link">Research</a>
                 <a href="#terminal" className="nav-link">Sandbox</a>
                 <a href="#experience" className="nav-link">Experience</a>
               </nav>
@@ -1127,7 +1160,7 @@
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5 }}>
                   <span>✦</span>
-                  <span>AI Systems &amp; High-Performance Computing</span>
+                  <span>AI &amp; Data Engineer • Team Leader @ Team Ahjin</span>
                 </motion.div>
 
                 <motion.h1 

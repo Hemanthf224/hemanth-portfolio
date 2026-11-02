@@ -1,408 +1,243 @@
 <div align="center">
 
-<!-- Section A: Animated Wave Banner & Capsule Render (Black & Blue Theme) -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,1,14,26&height=220&section=header&text=Mudiam%20Hemanth%20Reddy&fontSize=42&fontAlignY=38&animation=fadeIn&desc=AI%20%26%20Systems%20Engineer%20%7C%20High-Performance%20Computing%20%26%20Distributed%20Data&descAlignY=58&descAlign=50" width="100%" alt="Mudiam Hemanth Reddy Header Banner" />
+<!-- Header Wave Banner (Black & Electric Blue) -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,100:0A66FF&height=220&section=header&text=Hemanth%20Reddy&fontSize=56&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=AI%20%26%20Data%20Engineer%20%7C%20GPU%20Systems%20%7C%20Researcher&descAlignY=60&descSize=18" width="100%" alt="Hemanth Reddy Header Banner" />
 
-<!-- Typing Animation with Roles -->
+<!-- Typing SVG Animation -->
 <a href="https://github.com/Hemanthf224">
-  <img src="https://readme-typing-svg.demolab.com?font=Plus+Jakarta+Sans&weight=700&size=20&duration=3000&pause=1000&color=00E5FF&center=true&vCenter=true&width=680&lines=AI+%26+Systems+Engineer;High-Performance+Computing+(CUDA+%26+C%2B%2B);Distributed+Big+Data+Pipelines+(Spark+%26+Kafka);Production-Grade+FastAPI+ML+Microservices;B.Tech+AI+%26+Data+Science+%40+Amrita+(8.26+CGPA)" alt="Typing Roles Animation" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&duration=3000&pause=900&color=3B82F6&center=true&vCenter=true&width=700&lines=Bridging+ML+theory+and+production+systems;Building+GPU-accelerated+graph+engines;Streaming+pipelines+%7C+REST+APIs+%7C+Research+papers;Team+Leader+%40+Team+Ahjin" alt="Typing animation" />
 </a>
 
-<br/>
+<br/><br/>
 
-<!-- Quick Action & Identity Badges -->
-[![GitHub](https://img.shields.io/badge/GitHub-Hemanthf224-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Hemanthf224)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Hemanth_Reddy-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/hemanth-reddy-9517b0340/)
-[![Email](https://img.shields.io/badge/Email-hemanthredy48823%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:hemanthredy48823@gmail.com)
-[![Resume](https://img.shields.io/badge/Resume-Download_CV_(PDF)-00E5FF?style=for-the-badge&logo=adobe-acrobat-reader&logoColor=black)](M%20HEMANTH%20REDDY.pdf)
-
-<br/>
-
-[![Status](https://img.shields.io/badge/AVAILABILITY-Open_for_SWE_%26_AI_Roles-10B981?style=flat-square&labelColor=07090E)](mailto:hemanthredy48823@gmail.com)
-[![Education](https://img.shields.io/badge/AMRITA-B.Tech_AI_%26_DS_(8.26_CGPA)-3B82F6?style=flat-square&labelColor=07090E)](https://www.amrita.edu)
-[![Core Stack](https://img.shields.io/badge/CORE_STACK-C++%20%7C%20CUDA%20%7C%20Python%20%7C%20Spark%20%7C%20FastAPI-6366F1?style=flat-square&labelColor=07090E)](https://github.com/Hemanthf224)
-[![Architecture](https://img.shields.io/badge/PORTFOLIO-Zero_Build_React_18_%2B_Framer_Motion-A855F7?style=flat-square&labelColor=07090E)](index.html)
-[![Location](https://img.shields.io/badge/LOCATION-India_🇮🇳_(IST_/_UTC+5:30)-00E5FF?style=flat-square&labelColor=07090E)](mailto:hemanthredy48823@gmail.com)
-
-<br/>
-
-> *"Bridging low-level hardware execution (CUDA, C++) with distributed big data pipelines (Spark, Kafka) and low-latency machine learning microservices."*
+<!-- Identity & Status Badges -->
+[![Status](https://img.shields.io/badge/STATUS-ONLINE-0A66FF?style=for-the-badge&labelColor=000000)](mailto:hemanthredy48823@gmail.com)
+[![Role](https://img.shields.io/badge/ROLE-AI%20%26%20DATA%20ENGINEER-0A66FF?style=for-the-badge&labelColor=000000)](https://github.com/Hemanthf224)
+[![College](https://img.shields.io/badge/AMRITA-VISHWA%20VIDYAPEETHAM-0A66FF?style=for-the-badge&labelColor=000000)](https://www.amrita.edu)
+[![Open](https://img.shields.io/badge/OPEN%20TO-INTERNSHIPS%20%26%20COLLABS-22C55E?style=for-the-badge&labelColor=000000)](mailto:hemanthredy48823@gmail.com)
 
 </div>
 
 ---
 
-## 📌 Table of Contents
-
-- [👋 Section B: About Me & Elevator Pitch](#-section-b-about-me--elevator-pitch)
-- [📊 Key Engineering Impact & Metrics](#-key-engineering-impact--metrics)
-- [🛠️ Section D: Technical Arsenal & Skills Matrix](#️-section-d-technical-arsenal--skills-matrix)
-- [🚀 Section E: Featured Engineering Projects](#-section-e-featured-engineering-projects)
-  - [1. AI Network Intrusion Detection System (SDN-OSHLD)](#1-ai-network-intrusion-detection-system-sdn-oshld)
-  - [2. Distributed Real-Time Mobility & Fare Engine](#2-distributed-real-time-mobility--fare-engine)
-  - [3. Adaptive GPU Graph Traversal Engine (CUDA / C++)](#3-adaptive-gpu-graph-traversal-engine-cuda--c)
-  - [4. Electric Vehicle Stability via NMPC (TVC + RWS)](#4-electric-vehicle-stability-via-nmpc-tvc--rws)
-- [💻 Section J: Interactive Terminal & API Sandbox](#-section-j-interactive-terminal--api-sandbox)
-- [📈 Section G: GitHub Analytics & Stats Widgets](#-section-g-github-analytics--stats-widgets)
-- [🎮 Section K: Gamification & Boss Battles Solved](#-section-k-gamification--boss-battles-solved)
-- [📜 Section M: Professional Experience & Education](#-section-m-professional-experience--education)
-- [🌱 Section O: Learning Roadmap & 2026 Goals](#-section-o-learning-roadmap--2026-goals)
-- [☕ Section P: Personality, Setup & Fun Facts](#-section-p-personality-setup--fun-facts)
-- [🚀 Section Q: Quickstart & Local Launch](#-section-q-quickstart--local-launch)
-- [📬 Section C: Get In Touch](#-section-c-get-in-touch)
-
----
-
-## 👋 Section B: About Me & Elevator Pitch
-
-### 3-Line Developer Synopsis
-* **Hi, I'm Hemanth** 👋 — a software engineer specializing in **AI systems, GPU computing, and distributed big data pipelines**.
-* Currently pursuing my **B.Tech in Artificial Intelligence & Data Science** at **Amrita Vishwa Vidyapeetham** with a **CGPA of 8.26 / 10.0** (Expected May 2028).
-* Experienced in building asynchronous **FastAPI ML microservices** (sub-100ms inference), **CUDA/C++ parallel graph kernels**, and **Apache Spark/Kafka distributed pipelines** crunching 17GB+ datasets.
-
-<br/>
-
-```
-┌───────────────────┬────────────────────────────────────────────────────────────────────────┐
-│ Property          │ Value                                                                  │
-├───────────────────┼────────────────────────────────────────────────────────────────────────┤
-│ 🔨 Current Build   │ CUDA-accelerated graph traversal kernels & SDN intrusion detection API │
-│ 📖 Current Study   │ GPU memory profiling with NVIDIA Nsight Compute & Distributed PyTorch │
-│ 🤝 Open To        │ Software Engineering Internships, AI Systems roles, Research Collabs  │
-│ 💬 Ask Me About   │ CUDA, C++, Apache Spark, Kafka, FastAPI, Applied Machine Learning     │
-│ 📍 Location       │ Hyderabad / Telangana, India 🇮🇳 (IST / UTC+5:30)                      │
-│ 🗣️ Languages      │ English (Professional), Telugu (Native), Hindi (Conversational)        │
-│ ⚡ Elevator Pitch │ "Engineers resilient systems where hardware speed meets ML accuracy." │
-└───────────────────┴────────────────────────────────────────────────────────────────────────┘
-```
-
-<br/>
-
-<details>
-<summary><b>🔍 View <code>about_me.json</code></b> (Click to expand)</summary>
-
-```json
-{
-  "developer": "Mudiam Hemanth Reddy",
-  "alias": "MHR",
-  "role": "AI & Systems Engineer",
-  "education": {
-    "degree": "B.Tech in Artificial Intelligence & Data Science",
-    "institution": "Amrita Vishwa Vidyapeetham",
-    "timeline": "Aug 2024 - May 2028",
-    "cgpa": 8.26
-  },
-  "core_competencies": [
-    "High-Performance Computing (CUDA, C++)",
-    "Distributed Big Data (Apache Spark, Kafka, Hadoop HDFS)",
-    "Applied Machine Learning (Scikit-learn, LightGBM, XGBoost, SHAP)",
-    "Production Backend Infrastructure (FastAPI, Docker, REST, Linux)"
-  ],
-  "availability": "Open for Software Engineering & AI Systems Roles"
-}
-```
-</details>
-
-<details>
-<summary><b>🐍 View <code>developer.py</code></b> (Click to expand)</summary>
+## 🧠 About Me
 
 ```python
-class SystemsEngineer:
-    def __init__(self):
-        self.name = "Mudiam Hemanth Reddy"
-        self.education = "Amrita Vishwa Vidyapeetham (CGPA: 8.26)"
-        self.focus = ["GPU Acceleration", "Distributed Pipelines", "ML Microservices"]
-        self.stack = {"languages": ["Python", "C++", "CUDA", "Java", "Scala"]}
-
-    def solve_bottleneck(self, problem: str) -> str:
-        strategies = {
-            "memory_thrashing": "Apache Spark distributed partitioning over HDFS",
-            "cpu_traversal_lag": "CUDA warp-level memory coalescing kernels",
-            "slow_model_inference": "Asynchronous FastAPI microservice in Docker"
-        }
-        return strategies.get(problem, "Engineered custom optimized pipeline.")
-
-hemanth = SystemsEngineer()
+class Hemanth:
+    degree       = "B.Tech, AI & Data Science (Amrita, Coimbatore)"
+    role         = "AI & Data Engineer"
+    building     = "Adaptive GPU-accelerated graph engine (C++ / CUDA)"
+    research     = ["Quantum security", "Federated learning", "Flight dynamics"]
+    team         = "Leader of Team Ahjin (hackathons)"
+    mission      = "Make ML models scale, from streaming data to GPU execution"
+    ask_me_about = ["GPU computing", "Big Data", "Fraud detection", "REST APIs"]
 ```
-</details>
+
+> **Mission**: *Bridge the gap between theoretical machine learning and production-ready systems.*
 
 ---
 
-## 📊 Key Engineering Impact & Metrics
+## ⚡ Currently Working On
 
-```
-┌───────────────────────────┬───────────────────────────┬───────────────────────────┬───────────────────────────┐
-│   99.2% ACCURACY          │   17 GB+ DATA STREAMED    │   CUDA PARALLEL KERNELS   │   8.26 CGPA (AMRITA)      │
-│   Network Intrusion Detection │   11M+ Records via Spark  │   BFS, PageRank, SSSP     │   B.Tech AI & Data Science│
-│   CICIDS2017 & FastAPI    │   & Kafka Event Bus       │   NVIDIA GPU Accelerated  │   Strong CS Fundamentals  │
-└───────────────────────────┴───────────────────────────┴───────────────────────────┴───────────────────────────┘
-```
+| 🔭 Focus | 🛠️ Stack | 📈 Status |
+|:---|:---|:---:|
+| **Adaptive GPU Graph Engine** | `C++20`, `CUDA`, `OpenMP`, `MPI` | ![ACTIVE](https://img.shields.io/badge/-ACTIVE-0A66FF?style=flat-square&labelColor=000) |
+| **Research Papers (IEEE)** | `Python`, `Qiskit`, `MATLAB` | ![WRITING](https://img.shields.io/badge/-WRITING-F59E0B?style=flat-square&labelColor=000) |
+| **Distributed Systems & CUDA Optimization** | `Parallel Kernels`, `Kafka`, `Spark` | ![LEARNING](https://img.shields.io/badge/-LEARNING-8B5CF6?style=flat-square&labelColor=000) |
 
 ---
 
-## 🛠️ Section D: Technical Arsenal & Skills Matrix
+## 🚀 Featured Projects
 
-### 1. High-Performance Computing & Systems
-![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
-![CUDA](https://img.shields.io/badge/NVIDIA_CUDA-76B900?style=for-the-badge&logo=nvidia&logoColor=white)
-![PyBind11](https://img.shields.io/badge/PyBind11-00E5FF?style=for-the-badge&logo=python&logoColor=black)
-![Linux](https://img.shields.io/badge/Linux_/_POSIX-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-* **Specialties**: Warp-level parallelism, coalesced memory access, thread-pool task scheduling, PyBind11 zero-copy tensor sharing.
-
-### 2. Distributed Big Data & Streaming
-![Apache Spark](https://img.shields.io/badge/Apache_Spark-E25A1C?style=for-the-badge&logo=apache-spark&logoColor=white)
-![Apache Kafka](https://img.shields.io/badge/Apache_Kafka-231F20?style=for-the-badge&logo=apache-kafka&logoColor=white)
-![Hadoop](https://img.shields.io/badge/Hadoop_HDFS-66CCFF?style=for-the-badge&logo=apache-hadoop&logoColor=black)
-![Scala](https://img.shields.io/badge/Scala-DC322F?style=for-the-badge&logo=scala&logoColor=white)
-* **Specialties**: Distributed cluster computing, Spark MLlib pipelines, real-time message consumer/producer queues, Parquet columnar storage.
-
-### 3. Machine Learning & Modeling
-![Python](https://img.shields.io/badge/Python_3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
-![LightGBM](https://img.shields.io/badge/LightGBM-00E5FF?style=for-the-badge&logoColor=black)
-![XGBoost](https://img.shields.io/badge/XGBoost-1572B6?style=for-the-badge&logoColor=white)
-![SHAP](https://img.shields.io/badge/SHAP_Explainability-FF6F00?style=for-the-badge&logoColor=white)
-* **Specialties**: Tree ensemble classification, threshold tuning for severe class imbalance, SHAP feature attribution, SMOTE oversampling.
-
-### 4. Backend & Cloud Infrastructure
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
-* **Specialties**: Asynchronous ASGI microservices, sub-100ms inference endpoints, multi-stage Docker builds, version-controlled CI/CD.
-
----
-
-## 🚀 Section E: Featured Engineering Projects
-
-### 1. AI Network Intrusion Detection System (SDN-OSHLD)
-> **Asynchronous machine learning intrusion detection service deployed via Docker container for software-defined network traffic.**
-
-```
-[ Raw Network Telemetry ] ──► [ Feature Extraction ] ──► [ Ensemble Classifier ] ──► [ FastAPI Async REST ] ──► [ OpenFlow Switch ]
-     Packet Capture (PCAP)       Flow Normalization         99.2% Accuracy Model        <100ms Latency SLA         Threat Throttled
-```
-
-* **Problem**: Software-defined networks are vulnerable to high-throughput DDoS and lateral penetration. Traditional signature firewalls struggle against novel zero-day attack sequences.
-* **Architecture**: Trained tree-ensemble classifiers across three benchmark network flows. Packaged into an asynchronous FastAPI microservice containerized in Docker to ingest, extract telemetry features, and return classification flags with sub-100ms latency.
-* **Tech Stack**: `Python` • `Scikit-learn` • `Pandas` • `FastAPI` • `Docker` • `REST API`
-* **Benchmarks**: `99.2% Accuracy` | `<100ms Latency` | `3 Benchmark Datasets`
-* **Links**: [Source Code Repository](https://github.com/Hemanthf224) • [Architecture Case Study](index.html#projects)
-
----
-
-### 2. Distributed Real-Time Mobility & Fare Engine
-> **End-to-end distributed data engineering pipeline processing 17 GB of urban mobility telemetry to forecast ride demand, dynamic surge multipliers, and ETA.**
-
-```
-[ 17GB NYC TLC Feed ] ──► [ Kafka Topic Stream ] ──► [ Apache Spark MLlib ] ──► [ HDFS Data Lake ] ──► [ Real-Time Surge & ETA ]
-     Live Event Queue          Partition Consumer         Distributed Workers       Parquet Optimized         Sub-second API Served
-```
-
-* **Problem**: Ingesting high-velocity streaming ride telemetry and computing dynamic surge pricing and ETA across millions of events causes memory exhaustion on single-node instances.
-* **Architecture**: Staged raw datasets on Hadoop HDFS and built distributed Spark MLlib regression pipelines over 11,000,000+ ride records. Integrated Apache Kafka event streams to simulate real-time fleet telemetry with live weather and spatial zone feature joins.
-* **Tech Stack**: `Apache Spark` • `Hadoop HDFS` • `Kafka` • `Scala` • `Spark MLlib` • `Parquet`
-* **Benchmarks**: `17 GB Data` | `11,000,000+ Records` | `Distributed Cluster Workers`
-* **Links**: [Source Code Repository](https://github.com/Hemanthf224) • [Case Study](index.html#projects)
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🔥 Adaptive GPU Graph Engine</h3>
+      <p>Graph processing that dynamically schedules work across CPU and GPU based on the hardware topology and graph sparsity.</p>
+      <p>
+        <img src="https://img.shields.io/badge/C++-00599C?style=flat-square&logo=c%2B%2B&logoColor=white" />
+        <img src="https://img.shields.io/badge/CUDA-76B900?style=flat-square&logo=nvidia&logoColor=white" />
+        <img src="https://img.shields.io/badge/OpenMP-000000?style=flat-square&logoColor=white" />
+        <img src="https://img.shields.io/badge/MPI-0A66FF?style=flat-square&logoColor=white" />
+      </p>
+      <a href="https://github.com/Hemanthf224/adaptive-graph-engine"><b>View Repo →</b></a>
+    </td>
+    <td width="50%" valign="top">
+      <h3>🚕 TaxiPulse: Big Data Pipeline</h3>
+      <p>Distributed pipeline over <b>17GB+ (11M+ records)</b> with Kafka streaming and Spark MLlib for real-time demand, fare, and ETA prediction.</p>
+      <p>
+        <img src="https://img.shields.io/badge/Hadoop-66CCFF?style=flat-square&logo=apache-hadoop&logoColor=black" />
+        <img src="https://img.shields.io/badge/Spark-E25A1C?style=flat-square&logo=apache-spark&logoColor=white" />
+        <img src="https://img.shields.io/badge/Scala-DC322F?style=flat-square&logo=scala&logoColor=white" />
+        <img src="https://img.shields.io/badge/Kafka-231F20?style=flat-square&logo=apache-kafka&logoColor=white" />
+      </p>
+      <a href="https://github.com/Hemanthf224/TaxiPulse_Bigdata"><b>View Repo →</b></a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🛡️ SDN-OSHLD: Intrusion Detection</h3>
+      <p>Real-time network attack detection system with <b>99.2% accuracy</b> benchmarked on the CICIDS2017 dataset, deployed via FastAPI.</p>
+      <p>
+        <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
+        <img src="https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white" />
+        <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" />
+      </p>
+      <a href="https://github.com/Hemanthf224/SDN-OSHLD"><b>View Repo →</b></a>
+    </td>
+    <td width="50%" valign="top">
+      <h3>💳 Fraud Detection AI</h3>
+      <p>Mitigated severe class imbalance using SMOTE, benchmarked LightGBM, XGBoost, and Isolation Forest, and shipped a Streamlit risk dashboard.</p>
+      <p>
+        <img src="https://img.shields.io/badge/LightGBM-00E5FF?style=flat-square&logoColor=black" />
+        <img src="https://img.shields.io/badge/XGBoost-1572B6?style=flat-square&logoColor=white" />
+        <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white" />
+      </p>
+      <sub><i>Built during XYlofy AI Internship</i></sub>
+    </td>
+  </tr>
+</table>
 
 ---
 
-### 3. Adaptive GPU Graph Traversal Engine (CUDA / C++)
-> **High-throughput parallel graph analytics engine executing BFS, PageRank, and SSSP on NVIDIA hardware.**
+## 🏗️ How My Systems Think
 
-```
-[ CSR Adjacency Matrix ] ──► [ CUDA Kernel Blocks ] ──► [ Worker Pool Scheduler ] ──► [ PyBind11 C++ Bridge ] ──► [ Live Dashboard ]
-     Compressed Storage         Warp-Level Primitives      Failure-Tolerant Queue      Zero-Copy Memory Tensor     Telemetry Metrics
-```
-
-* **Problem**: Massive graph traversals suffer from severe CPU cache thrashing, irregular memory access patterns, and single-thread execution bottlenecks.
-* **Architecture**: Custom CUDA kernels optimizing warp-level primitives and memory coalescing. Designed a C++ thread-pool scheduler with worker failure tolerance, bridged directly to a Python backend using PyBind11 for real-time telemetry streaming.
-* **Tech Stack**: `C++` • `CUDA` • `PyBind11` • `FastAPI` • `Parallel Computing`
-* **Benchmarks**: `CUDA Warp Acceleration` | `3 Core Graph Algorithms` | `Zero-Copy Memory Bridge`
-* **Links**: [Source Code Repository](https://github.com/Hemanthf224) • [Kernel Benchmarks](index.html#terminal)
-
----
-
-### 4. Electric Vehicle Stability via NMPC (TVC + RWS)
-> **MATLAB/Simulink framework uniting Torque Vectoring Control (TVC) and Rear-Wheel Steering (RWS) for extreme collision avoidance stability.**
-
-```
-[ Steering & Yaw Inputs ] ──► [ 2-DOF Vehicle Plant ] ──► [ PMP Solver (NMPC) ] ──► [ Differential Torque ] ──► [ Dynamic Yaw Lock ]
-     Driver Maneuver             Fiala Non-Linear Tire       Low-Latency Horizon        Rear-Wheel Steer Angle     Extreme Maneuver Stability
-```
-
-* **Problem**: Dynamic sideslip divergence and vehicle rollover during high-speed emergency collision avoidance maneuvers under non-linear tire saturation.
-* **Architecture**: Formulated a 2-DOF vehicle dynamic model incorporating non-linear Fiala tire mechanics, dynamic axle weight transfer, and reference yaw generation. Developed a low-latency Pontryagin's Minimum Principle (PMP) solver with soft sideslip constraints, validated under ISO double lane-change benchmarks.
-* **Tech Stack**: `MATLAB` • `Simulink` • `Nonlinear MPC` • `Vehicle Dynamics`
-* **Benchmarks**: `PMP Fast Solver` | `2-DOF Dynamic Plant` | `ISO Double Lane Change & Fishhook`
-* **Links**: [Case Study Details](index.html#projects)
-
----
-
-### 📋 Project Summary Matrix
-
-| Project Name | Primary Domain | Core Tech Stack | Benchmark Metric | Status |
-|:---|:---|:---|:---|:---:|
-| **AI Network IDS (SDN-OSHLD)** | Cybersecurity & ML | `Python, Scikit-learn, FastAPI, Docker` | **99.2% Accuracy, <100ms Latency** | `Production` |
-| **Distributed Mobility Engine** | Big Data & Streaming | `Apache Spark, Kafka, HDFS, Scala` | **17 GB / 11M+ Records Processed** | `Completed` |
-| **Adaptive Graph Engine** | GPU High Performance | `C++, CUDA, PyBind11, Thread Pools` | **14.82ms BFS on 1M Vertices** | `Active` |
-| **EV Stability Control** | Nonlinear Optimal Control | `MATLAB, Simulink, NMPC, Fiala Tire` | **PMP Low-Latency Solver** | `Research` |
-
----
-
-## 💻 Section J: Interactive Terminal & API Sandbox
-
-```bash
-# 1. Simulating real-time network intrusion packet flow telemetry
-$ curl -X POST https://api.hemanth.dev/v1/detect-intrusion \
-    -H "Content-Type: application/json" \
-    -d '{"flow_duration": 18420, "tot_fwd_pkts": 38, "bwd_pkt_len_mean": 420.5}'
-
-HTTP/1.1 200 OK (48.2ms latency)
-{
-  "status": "ALERT_THREAT_MITIGATED",
-  "attack_vector": "DDoS-LOIC-HTTP",
-  "confidence_score": 0.9942,
-  "action": "Flow rate throttled on OpenFlow port #4"
-}
-```
-
-```bash
-# 2. Apache Spark cluster streaming throughput check
-$ spark-submit --master yarn --class com.hemanth.TaxiStreaming pipeline.jar
-
-[SPARK-MASTER] Active Executors: 8 | Cores: 32 | Memory: 64 GB
-[KAFKA-CONSUMER] Topic: "nyc-yellow-taxi-telemetry" | Offset Lag: 0
-[BATCH-STATUS]   Processed 11,482,900 trip records into HDFS Parquet tables
-[INFERENCE]      Surge multiplier computed in 142ms
+```mermaid
+flowchart LR
+    A[Raw Data / Streams] --> B[Kafka Ingestion]
+    B --> C[Spark Processing]
+    C --> D[ML Models]
+    D --> E[FastAPI Service]
+    E --> F[Dashboard]
+    C -.-> G[GPU Engine - CUDA]
+    G -.-> D
 ```
 
 ---
 
-## 📈 Section G: GitHub Analytics & Stats Widgets
+## 🧰 Tech Arsenal
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=Hemanthf224&show_icons=true&theme=tokyonight&hide_border=false&border_color=00E5FF&bg_color=07090E&title_color=00E5FF&text_color=94A3B8&icon_color=00E5FF" height="175" alt="Hemanth's GitHub Stats" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Hemanthf224&layout=compact&theme=tokyonight&hide_border=false&border_color=00E5FF&bg_color=07090E&title_color=00E5FF&text_color=94A3B8" height="175" alt="Top Languages" />
+### Languages
+[![Python](https://img.shields.io/badge/Python-000000?style=for-the-badge&logo=python&logoColor=3B82F6)](https://www.python.org)
+[![C++](https://img.shields.io/badge/C++-000000?style=for-the-badge&logo=cplusplus&logoColor=3B82F6)](https://isocpp.org)
+[![Scala](https://img.shields.io/badge/Scala-000000?style=for-the-badge&logo=scala&logoColor=3B82F6)](https://www.scala-lang.org)
+[![Java](https://img.shields.io/badge/Java-000000?style=for-the-badge&logo=openjdk&logoColor=3B82F6)](https://www.java.com)
 
-<br/>
+### AI / ML
+[![TensorFlow](https://img.shields.io/badge/TensorFlow-000000?style=for-the-badge&logo=tensorflow&logoColor=3B82F6)](https://www.tensorflow.org)
+[![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-000000?style=for-the-badge&logo=scikitlearn&logoColor=3B82F6)](https://scikit-learn.org)
+[![XGBoost](https://img.shields.io/badge/XGBoost-000000?style=for-the-badge&logoColor=3B82F6)](https://xgboost.readthedocs.io)
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=Hemanthf224&theme=tokyonight&hide_border=false&border_color=00E5FF&background=07090E&ring=00E5FF&fire=00E5FF&currStreakNum=00E5FF&sideNums=94A3B8&currStreakLabel=00E5FF" height="175" alt="GitHub Streak Stats" />
+### Big Data & Systems
+[![CUDA](https://img.shields.io/badge/CUDA-000000?style=for-the-badge&logo=nvidia&logoColor=3B82F6)](https://developer.nvidia.com/cuda-zone)
+[![Spark](https://img.shields.io/badge/Spark-000000?style=for-the-badge&logo=apachespark&logoColor=3B82F6)](https://spark.apache.org)
+[![Kafka](https://img.shields.io/badge/Kafka-000000?style=for-the-badge&logo=apachekafka&logoColor=3B82F6)](https://kafka.apache.org)
+[![Hadoop](https://img.shields.io/badge/Hadoop-000000?style=for-the-badge&logo=apachehadoop&logoColor=3B82F6)](https://hadoop.apache.org)
+
+### Backend & Tools
+[![FastAPI](https://img.shields.io/badge/FastAPI-000000?style=for-the-badge&logo=fastapi&logoColor=3B82F6)](https://fastapi.tiangolo.com)
+[![Docker](https://img.shields.io/badge/Docker-000000?style=for-the-badge&logo=docker&logoColor=3B82F6)](https://www.docker.com)
+[![Git](https://img.shields.io/badge/Git-000000?style=for-the-badge&logo=git&logoColor=3B82F6)](https://git-scm.com)
+[![Streamlit](https://img.shields.io/badge/Streamlit-000000?style=for-the-badge&logo=streamlit&logoColor=3B82F6)](https://streamlit.io)
+[![MATLAB](https://img.shields.io/badge/MATLAB-000000?style=for-the-badge&logoColor=3B82F6)](https://www.mathworks.com)
 
 </div>
 
 ---
 
-## 🎮 Section K: Gamification & Boss Battles Solved
+## 📄 Research & Publications
 
-```
-┌────────────────────────────────────────────────────────────────────────┐
-│ 🎮 DEVELOPER STATS CARD                                                │
-├────────────────────────────────────────────────────────────────────────┤
-│ Class: AI Systems & High-Performance Computing Engineer               │
-│ Level: 20  |  XP: 8,260 / 10,000 (Amrita CGPA: 8.26/10)                │
-│ Primary Weapons: CUDA Parallel Kernels, Apache Spark, FastAPI Microservices │
-├────────────────────────────────────────────────────────────────────────┤
-│ ⚔️ BOSS BATTLES DEFEATED:                                              │
-│ 1. [DEFEATED] The 17GB Memory Thrash (Cluster memory starvation)       │
-│    -> Solved via Spark distributed partitioning & Parquet optimizations │
-│ 2. [DEFEATED] The Warp Divergence (GPU kernel branch serialization)     │
-│    -> Solved via coalesced memory accesses and warp-level primitives   │
-│ 3. [DEFEATED] The Sub-100ms Inference Wall (API latency breach)        │
-│    -> Solved via asynchronous ASGI FastAPI pipeline in Docker          │
-└────────────────────────────────────────────────────────────────────────┘
-```
+| Paper Title | Venue / Conference | Status |
+|:---|:---|:---:|
+| **Ornithopter Flight Dynamics (AJK-OFM)** | IEEE SPICES 2026, Paper ID 2458 | ✅ Presented |
+| **Ambient Monitoring Rover** | IEEE Conference | 🔄 Revision |
+| **FGAT-RL: Federated Learning for IoT Anomaly Detection** | Academic Paper | ✍️ Writing |
+| **QKD Eavesdropping Detection (sequence-based QBER)** | Research Project | 🔬 In Progress |
 
 ---
 
-## 📜 Section M: Professional Experience & Education
+## 🏆 Experience & Achievements
 
-### Professional Experience
-* **AI & Data Science Intern** — *XYlofy AI* (2026 • Remote)
-  * Architected an end-to-end real-time financial fraud detection pipeline evaluating suspicious transactions.
-  * Benchmarked LightGBM, XGBoost, and Isolation Forest; tuned decision thresholds for severe class imbalance.
-  * Engineered SHAP explainability visualizations integrated into an interactive Streamlit risk assessment dashboard.
+<details>
+<summary><b>💼 Internship</b></summary>
+<br/>
+<b>AI & Data Science Intern — XYlofy AI (Remote, May to June 2026)</b><br/>
+• Architected and deployed an end-to-end real-time financial fraud detection system evaluating suspicious transactions.<br/>
+• Addressed severe class imbalance using SMOTE and benchmarked LightGBM, XGBoost, and Isolation Forest.<br/>
+• Engineered SHAP feature attribution visualizations integrated into an interactive Streamlit risk assessment dashboard.
+</details>
 
-### Education
-* **B.Tech in Artificial Intelligence & Data Science** — *Amrita Vishwa Vidyapeetham* (2024 — 2028)
-  * **Current CGPA**: `8.26 / 10.0`
-  * **Core Computer Science**: Data Structures & Algorithms, Operating Systems, Database Management Systems, Computer Networks.
-  * **Advanced Electives**: Machine Learning, Deep Learning, Distributed Computing, Linear Algebra & Probability.
-* **Intermediate (Class 12 - MPC)** — *Narayana Junior College, Telangana* (`94.2%`)
+<details>
+<summary><b>🏅 Hackathons & Leadership</b></summary>
+<br/>
+<b>Team Leader, Team Ahjin</b><br/>
+• Lead engineering and system architecture across national-level hackathons and technical competitions.<br/>
+• Coordinate end-to-end system development uniting machine learning models, streaming data pipelines, and production APIs.
+</details>
 
-### Honors & Certifications
-* **NVIDIA Deep Learning Institute**: Certificate in *Getting Started with AI on Jetson Nano*.
-* **XYlofy AI**: *AI & Data Analytics Internship Certificate*.
-* **National-Level Hackathon**: Team Lead & Finalist.
-* **GenAI Powered Data Analytics**: Certified Job Simulation Completion.
-
----
-
-## 🌱 Section O: Learning Roadmap & 2026 Goals
-
-- [x] Master asynchronous backend microservices with FastAPI & Docker
-- [x] Process 10M+ distributed streaming records with Apache Spark & Kafka
-- [x] Implement parallel BFS, PageRank, and SSSP in NVIDIA CUDA
-- [ ] Profile advanced CUDA memory hierarchies using **NVIDIA Nsight Compute**
-- [ ] Train distributed multi-node LLMs using **PyTorch FSDP & DeepSpeed**
-- [ ] Contribute to open-source distributed computing and machine learning runtimes
+<details>
+<summary><b>🎓 Certifications & Coursework</b></summary>
+<br/>
+• <b>NVIDIA Deep Learning Institute</b>: <i>Getting Started with AI on Jetson Nano</i><br/>
+• <b>XYlofy AI</b>: <i>AI & Data Analytics Internship Certificate</i><br/>
+• <b>Job Simulation</b>: <i>GenAI Powered Data Analytics Certificate</i><br/>
+• <b>Amrita Vishwa Vidyapeetham</b>: <i>B.Tech AI & Data Science (CGPA: 8.26 / 10.0)</i>
+</details>
 
 ---
 
-## ☕ Section P: Personality, Setup & Fun Facts
-
-* **Editor**: Visual Studio Code (Theme: Tokyo Night / Dark Slate)
-* **Font**: *JetBrains Mono* with ligatures enabled
-* **Working Philosophy**: *"Premature optimization is the root of all evil, but algorithmic bottlenecks belong in the kernel."*
-* **Fuel**: Espresso, cold brew, and intense focus playlists
-* **Work Style**: Night owl builder who thrives on tackling complex systems problems under heavy constraints
-
----
-
-## 🚀 Section Q: Quickstart & Local Launch
-
-Because the portfolio uses a standalone zero-build architecture, you can launch it instantly with any local HTTP server:
-
-```bash
-# Clone the repository
-git clone https://github.com/Hemanthf224/hemanth-portfolio.git
-
-# Enter project directory
-cd hemanth-portfolio
-
-# Launch with Python (built-in)
-python -m http.server 3000
-```
-Then open `http://localhost:3000` in your web browser.
-
----
-
-## 📬 Section C: Get In Touch
-
-I am actively open to software engineering internships, AI systems roles, and high-performance computing collaborations:
+## 📊 Telemetry & Metrics
 
 <div align="center">
 
-[![Email Me](https://img.shields.io/badge/Email-hemanthredy48823%40gmail.com-00E5FF?style=for-the-badge&logo=gmail&logoColor=black)](mailto:hemanthredy48823@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/Connect-LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/hemanth-reddy-9517b0340/)
-[![GitHub](https://img.shields.io/badge/Follow-GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Hemanthf224)
-[![Resume](https://img.shields.io/badge/Resume-Download_PDF-00E5FF?style=for-the-badge&logo=adobe-acrobat-reader&logoColor=black)](M%20HEMANTH%20REDDY.pdf)
+<img src="https://github-readme-stats.vercel.app/api?username=Hemanthf224&show_icons=true&theme=midnight-purple&bg_color=000000&title_color=3B82F6&icon_color=3B82F6&text_color=cbd5e1&hide_border=true" height="170" alt="GitHub Stats" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Hemanthf224&layout=compact&bg_color=000000&title_color=3B82F6&text_color=cbd5e1&hide_border=true" height="170" alt="Top Languages" />
+
+<br/><br/>
+
+<img src="https://streak-stats.demolab.com?user=Hemanthf224&background=000000&ring=3B82F6&fire=3B82F6&currStreakLabel=3B82F6&sideLabels=cbd5e1&currStreakNum=ffffff&sideNums=ffffff&dates=94a3b8&border=000000" width="80%" alt="Streak Stats" />
+
+<br/><br/>
+
+<img src="https://raw.githubusercontent.com/Hemanthf224/Hemanthf224/output/github-contribution-grid-snake-dark.svg" width="100%" alt="Contribution Snake Animation" />
+
+</div>
+
+---
+
+## 🗺️ Roadmap
+
+- [x] Fraud detection system with explainable AI
+- [x] Big data taxi pipeline (Hadoop, Spark, Kafka)
+- [x] Present research paper at IEEE SPICES 2026
+- [ ] Ship adaptive GPU graph engine with live dashboard
+- [ ] Publish quantum security and federated learning papers
+- [ ] Contribute to an open-source GPU or data project
+
+---
+
+## 🤝 Let's Connect
+
+<div align="center">
+
+[![Portfolio](https://img.shields.io/badge/Portfolio-Live_Site-0A66FF?style=for-the-badge&logo=googlechrome&logoColor=white)](index.html)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/hemanth-reddy-9517b0340/)
+[![Email](https://img.shields.io/badge/Email-hemanthredy48823%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:hemanthredy48823@gmail.com)
+[![Resume](https://img.shields.io/badge/Resume-Download_CV-00E5FF?style=for-the-badge&logo=adobe-acrobat-reader&logoColor=black)](M%20HEMANTH%20REDDY.pdf)
+
+<br/><br/>
+
+[![Profile Views](https://komarev.com/ghpvc/?username=Hemanthf224&color=0A66FF&style=flat-square&label=PROFILE+VIEWS)](https://github.com/Hemanthf224)
 
 <br/>
 
-**⭐ If you like this portfolio or projects, please consider leaving a star on this repository!**
+<sub>💡 Open to internships, research collaborations, and hackathon teams.</sub>
 
-<br/>
+<br/><br/>
 
-<!-- Easter Egg for Developers -->
-<!-- 
-Hey fellow engineer! If you're reading this in the raw markdown, congratulations on inspecting the source. 
-Let's build something fast and scalable together! Drop me an email with subject "[Easter Egg] Let's Connect".
--->
-
-© 2026 Mudiam Hemanth Reddy • Amrita Vishwa Vidyapeetham
-
-[⬆ Back to Top](#-mudiam-hemanth-reddy)
+<!-- You found the easter egg. Let's build something together. -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0A66FF,100:000000&height=100&section=footer" width="100%" alt="Footer Wave Banner" />
 
 </div>
