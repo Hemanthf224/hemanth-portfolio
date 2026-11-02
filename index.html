@@ -1,4 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Mudiam Hemanth Reddy — AI &amp; Systems Engineer | Tactical #10 Striker Portfolio">
 <title>Hemanth Reddy — Striker Card</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23040914'/><text x='50' y='68' font-family='sans-serif' font-size='50' font-weight='900' fill='%2300E5FF' text-anchor='middle'>%2310</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap">
@@ -167,6 +174,40 @@ section{padding:92px 0;border-top:1px solid var(--glass-border)}
 .stat:last-child{border-right:0}
 .stat b{display:block;font-family:"Anton",sans-serif;font-size:38px;line-height:1; text-shadow: 0 4px 12px color-mix(in srgb, var(--ink) 10%, transparent)}
 .stat span{display:block;margin-top:4px}
+
+
+/* ══ BENTO STAT GRID ══════════════════════════════════════════════════════ */
+.stat-bento{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-top:28px}
+.bento-card{background:var(--glass);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);
+  border:1px solid var(--glass-border);border-radius:20px;padding:22px 20px;box-shadow:var(--shadow);
+  position:relative;overflow:hidden;transition:border-color .35s,box-shadow .35s,transform .35s;cursor:default}
+.bento-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;
+  background:linear-gradient(90deg,transparent,var(--rule),transparent);opacity:.85}
+.bento-badge{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
+  padding:3px 10px;border-radius:100px;background:color-mix(in srgb,var(--rule) 15%,transparent);
+  color:var(--ink);border:1px solid var(--glass-border);margin-bottom:12px}
+.bento-num b{font-family:"Anton",sans-serif;font-size:clamp(36px,3.2vw,46px);line-height:1;display:block;
+  color:var(--ink);text-shadow:0 4px 16px color-mix(in srgb,var(--ink) 25%,transparent)}
+.bento-title{font-family:"Anton",sans-serif;font-size:18px;letter-spacing:.02em;text-transform:uppercase;
+  margin-top:8px;color:var(--ink)}
+.bento-desc{font-size:13px;color:var(--ink-soft);margin-top:4px;line-height:1.45}
+
+/* ══ PLAYER CREST BADGE & FOIL ════════════════════════════════════════════ */
+.player-crest-wrap{position:relative;width:94px;height:94px;display:grid;place-items:center;margin:0 auto}
+.player-crest-glow{position:absolute;inset:-6px;border-radius:50%;background:radial-gradient(circle,var(--rule) 0%,transparent 70%);opacity:.5;filter:blur(8px);animation:pulse 3s infinite}
+.player-crest-inner{position:relative;width:86px;height:86px;border-radius:50%;border:2px solid var(--rule);background:var(--paper-2);display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:inset 0 0 16px color-mix(in srgb,var(--rule) 30%,transparent),0 4px 20px rgba(0,0,0,.4)}
+.crest-num{font-family:"Anton",sans-serif;font-size:36px;line-height:.85;color:var(--rule);letter-spacing:.02em;text-shadow:0 0 12px var(--rule)}
+.crest-sub{font-family:"Zen Kaku Gothic New",sans-serif;font-size:9px;font-weight:900;letter-spacing:.16em;color:var(--ink);margin-top:2px}
+
+.pcard{border:1px solid var(--glass-border);background:var(--glass);padding:26px;position:relative;
+  box-shadow:var(--shadow);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px); border-radius:24px;
+  overflow:hidden;transition:box-shadow .4s,border-color .4s}
+.pcard::after{content:'';position:absolute;inset:0;background:linear-gradient(115deg,transparent 25%,rgba(255,255,255,0.06) 45%,rgba(255,255,255,0.14) 50%,rgba(255,255,255,0.06) 55%,transparent 75%);
+  pointer-events:none;transform:translateX(-100%);transition:transform .9s cubic-bezier(0.16, 1, 0.3, 1);border-radius:24px}
+.pcard:hover::after{transform:translateX(100%)}
+
+.attr-bar{height:5px;background:color-mix(in srgb, var(--ink) 12%, transparent);margin-top:4px;border-radius:4px;overflow:hidden}
+.attr-fill{height:100%;background:linear-gradient(90deg,var(--ink-soft),var(--rule));border-radius:4px;box-shadow:0 0 8px color-mix(in srgb,var(--rule) 50%,transparent)}
 
 /* formation */
 .form-grid{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:28px;align-items:start}
@@ -777,10 +818,12 @@ function App() {
                   <div style={{fontFamily: 'Anton', fontSize: '24px', color: 'var(--ink-soft)', lineHeight: 1}}>POT 94</div>
                   <div className="lbl" style={{ marginTop: 6, background: 'var(--ink)', color: 'var(--paper)', padding: '2px 6px', display: 'inline-block', width: 'fit-content' }}>ELITE PROSPECT</div>
                 </div>
-                <div style={{margin: '0 auto'}}>
-                    <div style={{width: '90px', height: '90px', borderRadius: '50%', border: '3px solid var(--ink)', background: 'var(--rule)', display: 'grid', placeItems: 'center', overflow: 'hidden'}}>
-                        <svg viewBox="0 0 24 24" width="60" height="60" fill="var(--paper)"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
-                    </div>
+                <div className="player-crest-wrap">
+                  <div className="player-crest-glow" />
+                  <div className="player-crest-inner">
+                    <span className="crest-num">10</span>
+                    <span className="crest-sub">STRIKER</span>
+                  </div>
                 </div>
                 <div className="pcard-name">Hemanth<br />Reddy<br /><span style={{fontFamily: 'Zen Kaku Gothic New', fontSize: '14px', fontWeight: 'bold', color: 'var(--ink-soft)'}}>#10 STRIKER</span></div>
               </div>
@@ -791,7 +834,7 @@ function App() {
                     <b><Count to={a.v} /></b>
                     <div style={{flex: 1}}>
                       <span className="lbl">{a.k}</span>
-                      <div style={{height: '4px', background: 'var(--rule)', marginTop: '2px'}}><motion.div initial={{scaleX: 0}} whileInView={{scaleX: a.v/100}} style={{height: '100%', background: 'var(--ink)', transformOrigin: 'left'}} viewport={{once: true}} transition={{duration: 1, delay: 0.5}} /></div>
+                      <div className="attr-bar"><motion.div className="attr-fill" initial={{scaleX: 0}} whileInView={{scaleX: a.v/100}} style={{transformOrigin: 'left'}} viewport={{once: true}} transition={{duration: 1, delay: 0.4}} /></div>
                     </div>
                   </div>
                 ))}
@@ -811,11 +854,31 @@ function App() {
               <p>Coursework runs through Data Structures &amp; Algorithms, DBMS, Operating Systems, Computer Networks,
                 Machine Learning and Deep Learning — the fundamentals behind everything further down. National-level
                 hackathon participant and team lead.</p>
-              <div className="stat-row">
-                <div className="stat"><b><Count to={99.2} dec={1} suffix="%" /></b><span className="lbl">IDS accuracy</span></div>
-                <div className="stat"><b><Count to={17} suffix=" GB" /></b><span className="lbl">Trip data</span></div>
-                <div className="stat"><b><Count to={3} /></b><span className="lbl">GPU algorithms</span></div>
-                <div className="stat"><b><Count to={94.2} dec={1} suffix="%" /></b><span className="lbl">Class 12</span></div>
+              <div className="stat-bento">
+                <motion.div className="bento-card" whileHover={{ y: -6, scale: 1.02, boxShadow: "0 20px 45px color-mix(in srgb, var(--rule) 25%, transparent)" }} transition={{ type: "spring", stiffness: 350, damping: 18 }}>
+                  <span className="bento-badge">🛡️ CYBERSEC AI</span>
+                  <div className="bento-num"><b><Count to={99.2} dec={1} suffix="%" /></b></div>
+                  <div className="bento-title">IDS Detection</div>
+                  <div className="bento-desc">CICIDS2017 benchmark • FastAPI microservice</div>
+                </motion.div>
+                <motion.div className="bento-card" whileHover={{ y: -6, scale: 1.02, boxShadow: "0 20px 45px color-mix(in srgb, var(--rule) 25%, transparent)" }} transition={{ type: "spring", stiffness: 350, damping: 18 }}>
+                  <span className="bento-badge">⚡ BIG DATA</span>
+                  <div className="bento-num"><b><Count to={17} suffix=" GB" /></b></div>
+                  <div className="bento-title">Streaming Scale</div>
+                  <div className="bento-desc">11M+ Records • Spark MLlib &amp; Kafka</div>
+                </motion.div>
+                <motion.div className="bento-card" whileHover={{ y: -6, scale: 1.02, boxShadow: "0 20px 45px color-mix(in srgb, var(--rule) 25%, transparent)" }} transition={{ type: "spring", stiffness: 350, damping: 18 }}>
+                  <span className="bento-badge">🚀 GPU SYSTEMS</span>
+                  <div className="bento-num"><b><Count to={3} /></b></div>
+                  <div className="bento-title">CUDA Kernels</div>
+                  <div className="bento-desc">BFS, PageRank, SSSP • PyBind11 bridge</div>
+                </motion.div>
+                <motion.div className="bento-card" whileHover={{ y: -6, scale: 1.02, boxShadow: "0 20px 45px color-mix(in srgb, var(--rule) 25%, transparent)" }} transition={{ type: "spring", stiffness: 350, damping: 18 }}>
+                  <span className="bento-badge">🎓 ACADEMIC</span>
+                  <div className="bento-num"><b><Count to={8.26} dec={2} /></b></div>
+                  <div className="bento-title">B.Tech CGPA</div>
+                  <div className="bento-desc">Amrita Vishwa Vidyapeetham AI &amp; DS</div>
+                </motion.div>
               </div>
             </motion.div>
           </div>
@@ -924,3 +987,5 @@ function App() {
 
 ReactDOM.createRoot(document.getElementById("root")).render(<App />);
 </script>
+</body>
+</html>

@@ -14,6 +14,7 @@
 [![Tech Stack](https://img.shields.io/badge/STACK-Python%20%7C%20CUDA%20%7C%20Spark%20%7C%20FastAPI-E63946?style=flat-square&labelColor=040914)](https://github.com/Hemanthf224)
 [![UI Engine](https://img.shields.io/badge/AESTHETIC-Dark_Glassmorphism_•_3D_Tilt-F9D342?style=flat-square&labelColor=040914)](index.html)
 [![Education](https://img.shields.io/badge/AMRITA-B.Tech_AI_%26_DS_(8.26_CGPA)-00FF41?style=flat-square&labelColor=040914)](https://www.amrita.edu)
+[![Build](https://img.shields.io/badge/ARCHITECTURE-Zero_Build_Standalone-blueviolet?style=flat-square&labelColor=040914)](index.html)
 
 <br/>
 
@@ -27,9 +28,13 @@
 
 - [🏟️ The Concept: Engineering as a Tactical Match](#️-the-concept-engineering-as-a-tactical-match)
 - [⚡ The Pitch: 4-3-3 Tactical Formation](#-the-pitch-4-3-3-tactical-formation)
-- [🎯 Goals Scored (Flagship Projects)](#-goals-scored-flagship-projects)
+- [🎯 Goals Scored: Flagship Projects & Architectures](#-goals-scored-flagship-projects--architectures)
+  - [01. AI Cyberattack Detection (SDN-OSHLD)](#1-ai-cyberattack-detection-sdn-oshld)
+  - [02. Real-Time Taxi Demand & Fare Streaming Pipeline](#2-real-time-taxi-demand--fare-streaming-pipeline)
+  - [03. Adaptive Graph Engine (CUDA / C++)](#3-adaptive-graph-engine-cuda--c)
+  - [04. EV Lateral Stability via NMPC (TVC + RWS)](#4-ev-lateral-stability-via-nmpc-tvc--rws)
 - [🎨 Matchday Kits (Interactive Multi-Theme Engine)](#-matchday-kits-interactive-multi-theme-engine)
-- [📊 Player Card & Radar Metrics](#-player-card--radar-metrics)
+- [📊 Player Card, Bento KPIs & Radar Scouting](#-player-card-bento-kpis--radar-scouting)
 - [🏆 The Trophy Cabinet & Honours](#-the-trophy-cabinet--honours)
 - [📜 Match Log & Career History](#-match-log--career-history)
 - [🚀 Quickstart & Standalone Architecture](#-quickstart--standalone-architecture)
@@ -39,11 +44,11 @@
 
 ## 🏟️ The Concept: Engineering as a Tactical Match
 
-Most portfolios are static CV dumps. This portfolio treats **software engineering, systems design, and applied machine learning** as a high-intensity tactical football match.
+Most portfolios are static CV dumps. This portfolio reimagines **systems design, distributed computing, and applied machine learning** as a high-intensity football match:
 
-- **The Pitch**: Systems are interconnected. Models depend on data pipelines, APIs bridge low-level kernels to users, and reliable storage keeps distributed clusters alive.
-- **The Striker (#10)**: Fast, ruthless execution in Python, C++, and CUDA that turns complex research and architectural bottlenecks into production results.
-- **The Matchday Kits**: Instant aesthetic switching across 4 bespoke visual profiles—from cyber glassmorphism to brutalist manga high contrast.
+- **The Pitch**: Systems are living organisms. Distributed data clusters stage the ball, backend microservices distribute the play, and low-level kernels execute the final strike.
+- **The Striker (#10)**: Fast, decisive engineering across Python, C++, and CUDA that solves architectural bottlenecks and scores in production.
+- **The Matchday Kits**: Real-time theme switching across 4 bespoke visual profiles—from cyber glassmorphism to brutalist manga high contrast.
 
 ```
                       [ PITCH OVERVIEW: 4-3-3 FORMATION ]
@@ -93,57 +98,77 @@ Every technology in the stack occupies a deliberate tactical position on the pit
 - **Gradient Boosting**: `LightGBM` & `XGBoost` (Benchmark fraud detection algorithms)
 - **Explainability**: `SHAP` (Feature attribution and transparent risk scoring)
 - **JVM Data**: `Scala` (Spark jobs built for maximum cluster performance)
-- **Frontend**: `React`, `Framer Motion`, `Modern CSS Variables` (Tactical UI engineering)
+- **Frontend**: `React 18`, `Framer Motion`, `Modern CSS Variables` (Tactical UI engineering)
 
 ---
 
-## 🎯 Goals Scored (Flagship Projects)
+## 🎯 Goals Scored: Flagship Projects & Architectures
 
-### ⚽ 01. AI Cyberattack Detection (SDN-OSHLD)
+### ⚽ 1. AI Cyberattack Detection (SDN-OSHLD)
 > **A network intrusion detection system trained on CICIDS2017 and served as an enterprise-grade REST service.**
+
+```
+[ Raw Flow Telemetry ] ──► [ Feature Normalization ] ──► [ Ensemble Classifier ] ──► [ FastAPI Service ] ──► [ Alert Dashboard ]
+                                                           • 99.2% Accuracy            • <100ms Ingestion       • Mitigated Threat
+```
 
 - **Key Highlights**:
   - Achieved **99.2% classification accuracy** across multi-class network assault vectors.
   - Containerized with Docker and served through an asynchronous **FastAPI** pipeline.
   - Engineered for real-time telemetry processing with **<100 ms latency**.
 - **Tech Stack**: `Python` • `Scikit-learn` • `Pandas` • `FastAPI` • `Docker`
-- **Metrics**: `99.2% Accuracy` | `<100 ms Response` | `3 Benchmark Datasets`
+- **Key Metrics**: `99.2% Accuracy` | `<100 ms Response` | `3 Benchmark Datasets`
 
 ---
 
-### ⚽ 02. Real-Time Taxi Demand, Fare & ETA Pipeline
+### ⚽ 2. Real-Time Taxi Demand & Fare Streaming Pipeline
 > **Big data distributed pipeline predicting urban mobility demand, fare pricing, and trip duration.**
+
+```
+[ 17GB NYC TLC Feed ] ──► [ Kafka Topic Stream ] ──► [ Apache Spark MLlib ] ──► [ HDFS Data Lake ] ──► [ Real-Time Surge & ETA ]
+                             • Live Telemetry          • Distributed Workers      • Parquet Optimized       • Batch & Stream Served
+```
 
 - **Key Highlights**:
   - Distributed batch & streaming pipeline crunching **17 GB** of raw geospatial trip logs.
   - Trained regression and clustering estimators across **11,000,000+ trip records**.
   - Integrated weather signals and spatial zone matrices into Spark MLlib pipelines.
 - **Tech Stack**: `Hadoop HDFS` • `Apache Spark` • `Kafka` • `Scala` • `Spark MLlib`
-- **Metrics**: `17 GB Data` | `11M+ Records` | `Distributed Cluster`
+- **Key Metrics**: `17 GB Data` | `11M+ Records` | `Distributed Cluster`
 
 ---
 
-### ⚽ 03. Adaptive Graph Engine (CUDA / C++)
+### ⚽ 3. Adaptive Graph Engine (CUDA / C++)
 > **GPU-accelerated parallel graph traversal running BFS, PageRank, and SSSP on NVIDIA hardware.**
+
+```
+[ Graph Adjacency CSR ] ──► [ CUDA Parallel Kernels ] ──► [ Worker Pool Scheduler ] ──► [ PyBind11 Bridge ] ──► [ FastAPI Metrics ]
+                              • Warp-Level BFS              • Fault-Tolerant Tasks        • Zero-Copy Memory       • Real-Time Monitor
+```
 
 - **Key Highlights**:
   - Massive parallelism leveraging CUDA thread blocks and warp-level optimizations.
   - Custom thread-pool scheduler managing concurrent workloads and recovering from worker failures.
   - High-performance C++ backend bridged directly to Python/FastAPI via **PyBind11**.
 - **Tech Stack**: `C++` • `CUDA` • `PyBind11` • `FastAPI` • `GPU Kernels`
-- **Metrics**: `GPU Accelerated` | `3 Core Algorithms` | `Live Metrics Dashboard`
+- **Key Metrics**: `GPU Accelerated` | `3 Core Algorithms` | `Live Metrics Dashboard`
 
 ---
 
-### ⚽ 04. Electric Vehicle Stability via NMPC (TVC + RWS)
+### ⚽ 4. EV Lateral Stability via NMPC (TVC + RWS)
 > **Independent MATLAB/Simulink framework uniting Torque Vectoring Control and Rear-Wheel Steering.**
+
+```
+[ Driver Steering Angle ] ──► [ 2-DOF Vehicle Plant ] ──► [ PMP Solver (NMPC) ] ──► [ Differential Torque ] ──► [ Dynamic Yaw Lock ]
+                              • Fiala Non-Linear Tire     • Low-Latency Horizon       • Rear-Wheel Steer Angle   • Fishhook / DLC Test
+```
 
 - **Key Highlights**:
   - Formulated a 2-DOF vehicle dynamic plant with non-linear **Fiala tire mechanics** and dynamic axle load.
   - Designed a **Pontryagin's Minimum Principle (PMP)** solver featuring soft sideslip relaxation.
   - Validated under severe ISO double lane-change (DLC) and fishhook maneuvers.
 - **Tech Stack**: `MATLAB` • `Simulink` • `Nonlinear MPC` • `Vehicle Dynamics`
-- **Metrics**: `PMP Solver` | `2-DOF Dynamic Plant` | `Extreme Stability Benchmark`
+- **Key Metrics**: `PMP Solver` | `2-DOF Dynamic Plant` | `Extreme Stability Benchmark`
 
 ---
 
@@ -153,20 +178,17 @@ The portfolio features a live theme cycler with instantaneous physics-based tran
 
 | Kit | Theme Name | Palette & Tone | Design Philosophy |
 |:---:|:---|:---|:---|
-| 🌌 | **Ink Mode** *(Default)* | Deep Navy (`#040914`), Neon Cyan (`#00E5FF`), Muted Slate | Glassmorphism, blurred acrylic surfaces (`backdrop-filter: blur(16px)`), luminous cyan glow. |
+| 🌌 | **Ink Mode** *(Default)* | Deep Navy (`#040914`), Neon Cyan (`#00E5FF`), Muted Slate | Glassmorphism, blurred acrylic surfaces (`backdrop-filter: blur(24px)`), luminous cyan glow. |
 | 🩸 | **Ego Mode** | Stark Paper (`#FAFAFA`), Deep Ink (`#0B0B0C`), Crimson (`#E63946`) | Manga brutalism, sharp contrast, hyper-bold borders inspired by *Blue Lock*. |
 | 📟 | **Matrix Mode** | True Black (`#090909`), Terminal Green (`#00FF41`), Deep Phosphor | Cyberpunk hacker terminal aesthetic with CRT screen phosphor glow. |
 | 👑 | **Gold Mode** | Matte Obsidian (`#0A0A0A`), Champagne Gold (`#F9D342`), Muted Ochre | Luxury high-roller aesthetic with soft gold specular reflections. |
 
 ---
 
-## 📊 Player Card & Radar Metrics
+## 📊 Player Card, Bento KPIs & Radar Scouting
 
-The portfolio hero features a **Framer Motion 3D Tilt Player Card** with an integrated SVG tactical radar:
-
+### 🏅 Tactical Scouting Radar
 ```
-                  [ TACTICAL SCOUTING RADAR ]
-
                            AI / ML [88]
                                ▲
                               / \
@@ -179,8 +201,11 @@ The portfolio hero features a **Framer Motion 3D Tilt Player Card** with an inte
                            API [84]
 ```
 
-- **3D Card Physics**: Dynamically tracks cursor proximity with smooth spring damping.
-- **Tactical Halftone**: Subtle halftone dot grid and film grain overlays simulating physical trading cards.
+### ⚡ Bento KPI Cards
+- 🛡️ **Cybersecurity AI**: `99.2% Accuracy` (CICIDS2017 benchmark • FastAPI microservice)
+- ⚡ **Big Data Streaming**: `17 GB Processed` (11M+ Records • Spark MLlib & Kafka)
+- 🚀 **GPU Systems**: `3 CUDA Kernels` (BFS, PageRank, SSSP • PyBind11 C++ bridge)
+- 🎓 **Academic Merit**: `8.26 CGPA` (Amrita Vishwa Vidyapeetham • B.Tech AI & Data Science)
 
 ---
 
