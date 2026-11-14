@@ -25,3 +25,18 @@ yarn-error.log*
 pnpm-debug.log*
 .temp/
 .cache/
+
+# Local credentials and private working files
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*.json
+secrets*.json
+node_modules/
+.venv/
+private/
+backups/
+*.bak
